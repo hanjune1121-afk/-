@@ -1,0 +1,14 @@
+I uploaded two images. Image 1 is our logo file. Image 2 is our illustrated package concept for a frozen marinated lamb skewer product. Turn image 2 into a plain studio photograph of the real, mass-produced retail carton, the kind of photo used on an online shopping product page.
+
+Keep from image 2: the box shape and proportions, the layout and position of every element, the colors (deep burgundy wine box, golden yellow band across the top), the logo position and size, the product name position, and the window. Do not redesign, move, or add elements.
+
+Logo: use the logo from image 1 exactly as it is, printed in solid black on the yellow band, in the same spot as in image 2. Do not redraw it, and keep the small hand holding a yellow card that replaces the first "l".
+
+Turn the illustration into real materials:
+- Box: printed paperboard carton with a matte coated finish, sharp machine folds, slightly rounded corners, the glue flap seam visible on the side edge, one tiny handling scuff on a corner. Flat offset-printed ink: no outlines, no cel shading, no gloss.
+- Window: a die-cut window covered with thin clear film, with soft reflections and one faint crease. Behind it, five raw frozen marinated lamb skewers lie side by side in a black plastic tray sealed with a second, tight clear film: irregular dark red lamb chunks about 2-3 cm with a few small pieces of white fat, on thin round bamboo skewers, with a light brownish marinade, a few black pepper specks and a thin white frost. Raw and frozen, not cooked, no dry spice coating.
+- If image 2 shows drawn food anywhere outside the window, replace it with a printed food photo in the same spot and size: grilled lamb skewers with browned, slightly charred edges and cumin-chili seasoning, with the slightly flat look of ink printed on board.
+
+Text: render only the logo and the Korean word "양꼬치" in large bold white letters, in the place of the biggest product name text in image 2. Keep every other text area of image 2 (smaller words, the black pill label, small lines) as empty shapes with no letters. Do not invent any other words, numbers or icons.
+
+Photography: the box stands upright on a seamless light gray paper backdrop, turned about 15 degrees to show a little of its right side. One large softbox from the upper left, a white bounce card on the right, a soft contact shadow under the box. 100 mm macro lens, f/11, ISO 100, neutral daylight white balance (5500K). Colors the way printed ink really looks, not boosted. No steam, no ice cubes, no props, no glow. Landscape 3:2.

@@ -1,0 +1,192 @@
+제품 실사화 프롬프트 전체 모음 (보기용)
+Gemini에 보낼 때는 컷별 TXT 파일을 하나씩 쓰세요.
+
+==================== 1-1 오렌지치킨 · 레퍼런스변환컷 ====================
+[첨부할 이미지] ① 로고_yellow_흰배경.png  ② 참조용_패키지_오렌지치킨.png (이 순서로 2장)
+
+I uploaded two images. Image 1 is our brand logo. Image 2 is an illustrated concept of our package. Turn image 2 into a plain product photo of the real, manufactured package, as if it had been bought from the chilled section of a Korean convenience store. Keep the layout, proportions, colors, text positions and logo position of image 2 unchanged.
+
+Construction: a black polypropylene microwave tray, about 17 x 12 x 4.5 cm, heat-sealed with clear film and slid into a printed paperboard sleeve. The package lies flat. The sleeve is open at its two short ends, so the black tray rim and the edge of the film show there.
+
+Printing: matte coated paperboard in the same orange as image 2. The band across the top is the same yellow as image 2, with the logo from image 1 printed in solid black and copied exactly. Do not redraw the logo or add letters to it. The large white Korean product name reads exactly "오렌지치킨", in the same position and size as in image 2. The small black pill-shaped label reads exactly "냉장 · 180g" in white. All printing looks like ink on paper, sitting flat in the paper grain. Add no other text, icons or badges, and do not print any color codes.
+
+Window and food: the circle is a real die-cut hole in the sleeve, with the cut edge of the board visible. Through it, under the clear film, we see real chilled orange chicken (American-Chinese fried chicken pieces in orange glaze, no orange fruit): irregular battered pieces, the sauce gone slightly dull and set from the fridge, some batter showing through, a few sesame seeds and thin green onion slices, sauce smeared on the underside of the film, the film slightly fogged on the inside. If image 2 has drawn food anywhere else, replace it with a printed food photo (offset print, flatter and less sharp than the real food in the window). Remove all outlines, flat vector shading and cartoon highlights.
+
+Photo: light gray paper background. The camera looks down at the package at about 60 degrees, so the printed top reads clearly and the 4.5 cm side wall is visible. 100mm macro lens, f/11, one large softbox from the upper left, white card fill on the right, neutral 5500K white balance, soft contact shadow.
+
+Real-world imperfections: visible paper grain, tiny white cracks along the folded edges, the sleeve a few millimeters off-center on the tray, a small wrinkle in the film near one corner, a soft softbox reflection on the film. No illustration style, no glow, no steam, no oversaturated color. Landscape 3:2.
+
+==================== 1-2 오렌지치킨 · 스튜디오패키지컷 ====================
+[첨부할 이미지] 컷1 결과 1장
+
+Same package as the attached photo (same colors, band height and window position), but with all text and the logo removed.
+
+Product photo of a chilled ready meal from a Korean convenience store, lying flat on light warm gray seamless paper: a black plastic microwave tray sealed with clear film, inside a matte tangerine orange paperboard sleeve that is open at both short ends, so the black tray rim shows. A plain yellow band runs across the top of the sleeve with nothing printed on it. Below it are a plain orange area and a round die-cut window showing real orange-glazed fried chicken under the film: irregular battered pieces in slightly set orange sauce, sesame seeds, thin green onion, sauce smeared on the film, faint fog inside the film. A small blank black pill-shaped label near the lower left corner. Three-quarter view from the front left, camera about 45 degrees above. 100mm macro lens, f/11, large softbox from the upper left, white card fill on the right, soft contact shadow, neutral daylight white balance. Visible paper grain, tiny white cracks along the folded edges, sleeve slightly off-center on the tray, a small film wrinkle at one corner. Product right of center, empty space on the left.
+
+Landscape 3:2. Do not include any of the following: text, letters, logo, orange fruit, illustration, cartoon, cgi, plastic toy, glow, steam, garnish, props, gradient background, mirror reflection.
+
+==================== 1-3 오렌지치킨 · 편의점현장컷 ====================
+[첨부할 이미지] 마스터 컷 1장 (컷1 결과에서 로고·제품명을 원본으로 고친 완성본)
+
+The attached photo shows our finished package. Keep its printed design exactly as it is: same orange, same yellow band and logo, same text, same window position. Use it in a new photo:
+
+A phone snapshot taken inside a Korean convenience store, in front of an open-front refrigerated display case. On a forward-tilted shelf at chest height, about eight of these packages (orange paperboard sleeves with a yellow top band and a round window, over black meal trays) lie flat in rows two to three deep. The front package is pulled slightly forward and sits a little crooked; one spot in the back row is empty. A clear plastic price rail runs along the shelf edge, holding a small white price label that shows only "4,800" in black digits; the rest of the label is blank. The shelves above and below hold other chilled ready meals, sandwiches and triangle gimbap in plain generic packaging, out of focus, with no readable writing. No store signage, no people.
+
+Light: white LED strips inside the case, slightly cool, small hard glare spots on the film, the film over the food a little fogged on the inside, the paper sleeves dry. Handheld phone main camera, 26mm equivalent, f/1.8, framing slightly tilted, focus on the front package, background softly blurred, mild noise in the shadows, ordinary phone processing. Unstyled, like a photo a customer took to send to a friend. Portrait 3:4.
+
+==================== 1-4 오렌지치킨 · 조리후연출컷 ====================
+[첨부할 이미지] 마스터 컷 1장 (컷1 결과에서 로고·제품명을 원본으로 고친 완성본)
+
+The attached photo shows our finished package. Keep the printed sleeve design exactly as it is, and use it in a new photo:
+
+A candid photo of a solo meal on a small desk in a Korean one-room studio apartment, late afternoon. The orange chicken has just been microwaved and is being eaten straight from its black plastic tray. The clear film is peeled back halfway and curled, with water droplets and orange sauce smears on its underside. About ten irregular battered chicken pieces in orange glaze, coated unevenly with some crust showing, sauce pooled in the tray corners, a few sesame seeds and thin green onion slices, one piece already gone. The empty sleeve from the attached photo lies beside the tray, slightly flattened and creased, set down at an angle with its printed top facing up. Also on the desk: a microwaved instant rice bowl with its lid peeled off, disposable wooden chopsticks resting across the tray edge, a crumpled chopstick paper wrapper, a phone lying face down, and the edge of a closed laptop. Lived-in but not messy.
+
+Soft daylight from a window on the left, neutral to slightly warm, natural falloff across the desk, no added lights. 35mm lens, f/2.8, seated eye level looking down about 45 degrees, slightly off-center framing, background softly out of focus. No steam, or only a faint trace. A real convenience store portion; the food looks microwaved at home, not styled. Landscape 3:2.
+
+==================== 2-1 토마토마라컵라면 · 레퍼런스변환컷 ====================
+[첨부할 이미지] ① 로고_yellow_흰배경.png  ② 참조용_패키지_토마토마라컵라면.png (이 순서로 2장)
+
+Image 1 is our brand logo: the black lowercase wordmark "yellow". Image 2 is an illustrated design of our cup noodle. Turn Image 2 into a photograph of the real, mass-produced product, the way it looks when sold in a Korean convenience store.
+
+Keep the design of Image 2, but not its cartoon proportions: the tomato-red paper cup, the solid yellow band around the top with the logo from Image 1 in the same place and size (copy it exactly; do not redraw or restyle it), the Korean product name "토마토" in white and "마라" in yellow in the same position, and the off-white lid with a thin red ring. Add no other words, badges or stickers.
+
+Replace the cartoon food drawing with a printed serving-suggestion photo of tomato mala ramen: orange-red, slightly cloudy broth with small beads of chili oil, wavy noodles, a few pieces of bok choy and dried red chili. It is printed flat on the paper and bends with the curve of the cup.
+
+Make the object physically real: a slightly tapered cup of matte-coated paperboard with a rolled rim and a faint vertical side seam; a paper-foil lid heat-sealed on top, with a small pull tab past the rim pressed down under the film; the whole cup wrapped in thin clear shrink film with long soft highlights and fine wrinkles gathered at the base. The print looks like ink on paper, a little less saturated than on a screen.
+
+Photograph: one cup, roughly 11 cm across the top, standing on light grey seamless paper. Front label facing the camera, camera slightly above the rim so the lid shows as a thin ellipse. 100mm lens at f/11, whole cup sharp. One large softbox from the upper left, white bounce card on the right, neutral daylight white balance with no warm or yellowish cast, soft contact shadow under the cup. Square image. It should look like a catalogue photo of a real retail product, not an illustration or computer graphics: no outlines, no flat cartoon shading, no glow.
+
+==================== 2-2 토마토마라컵라면 · 스튜디오패키지컷 ====================
+[첨부할 이미지] 컷1의 글자·로고 없는 버전 1장
+
+Use the attached photo as the exact cup design: same shape, same red, same yellow band, same lid. It has no text or logo, and the result must not have any either.
+
+Catalogue product photograph of one large Korean instant cup noodle on warm light grey seamless paper, cup on the right third of the frame, wide empty background on the left. Slightly tapered cup of matte tomato-red coated paperboard with a rolled rim and a faint vertical side seam. A plain warm yellow band around the top of the cup. On the lower front, a printed photo of tomato mala noodle soup, orange-red cloudy broth, wavy noodles, bok choy, dried chili, printed flat and curving with the cup; above it a large plain red area. Off-white paper-foil lid with a thin red ring. Clear shrink film over the whole cup, long soft highlights, fine wrinkles gathered at the base, pull tab pressed down under the film. Front label facing the camera, camera just above the rim. 100mm lens, f/11, large softbox from the upper left, soft shadow falling behind the cup to the right, neutral white balance, faint paper grain in the print, a few dust specks on the backdrop.
+
+Landscape 16:9. Do not include any of the following: text, letters, words, logo, watermark, illustration, cartoon, cgi, steam, splash, floating ingredients, glossy plastic, reflective floor, oversaturated.
+
+==================== 2-3 토마토마라컵라면 · 편의점현장컷 ====================
+[첨부할 이미지] 마스터 컷 1장 (컷1 결과에서 로고·제품명을 원본으로 고친 완성본)
+
+Use the attached product photo as the exact package: same cup shape, colors, yellow top band, logo and layout. Do not change the design.
+
+Create a candid smartphone photo taken inside a Korean convenience store. These cups are lined up on a white metal instant-noodle shelf at about waist-to-chest height, two or three deep, front labels facing out but slightly uneven, a couple turned a few degrees. One spot in the front row is empty where a cup has been sold, so the cup behind it sits further back. The nearest cup is in focus. Along the shelf edge runs a clear plastic price rail holding a small white price label that shows only "1,800" in black digits; the rest of the label is blank. The neighboring shelf sections hold other cup noodles and snacks with no readable branding, out of focus and partly cut off by the frame edges. No store signage or chain logos anywhere in the frame. Light comes from the store's bright white ceiling lights: slightly cool white balance, bright highlight streaks on the shrink film, flat even light. Small real-life details: scuffs on the price rail, a little dust on the shelf lip. Handheld phone main camera (about 26mm equivalent), close to the shelf, slight downward angle, slightly tilted horizon, natural phone HDR and a little noise in the shadows. Landscape 3:2. It should look like a quick photo a customer took, not a staged advertisement.
+
+==================== 2-4 토마토마라컵라면 · 조리후연출컷 ====================
+[첨부할 이미지] 마스터 컷 1장 (컷1 결과에서 로고·제품명을 원본으로 고친 완성본)
+
+Use the attached product photo as the exact package design. Do not change it.
+
+Create a natural photo of a solo meal on a small desk in a Korean one-room studio apartment, late afternoon. One cup of this noodle, opened and ready to eat, its front label turned toward the camera. The lid is peeled back about halfway and folded up behind the rim, its silver inner side showing a few drops of condensation. Inside: orange-red, slightly cloudy tomato broth with small beads of chili oil, wavy instant noodles a little clumped, and only the small amount of rehydrated bok choy bits and dried chili flakes a real cup noodle has. A thin fill line printed on the inner wall shows just above the broth. Split wooden disposable chopsticks rest across the rim, and one drip of broth has run down the outside of the cup. Around it, partly in frame: the crumpled clear shrink film peeled off the cup, two small torn seasoning sachets lying printed side down, the paper chopstick sleeve, a folded napkin, a label-free plastic water bottle, the edge of a closed laptop and a phone lying face down. No hands or people. Soft daylight from a window on the left, warm-neutral white balance, gentle shadows, at most a faint wisp of steam. 35mm lens at f/4 from seated eye level slightly above the desk, focus on the cup, background slightly soft. Landscape 3:2. True-to-life, slightly muted colors, like an unstyled photo taken right before eating.
+
+==================== 3-1 냉동양념양꼬치 · 레퍼런스변환컷 ====================
+[첨부할 이미지] ① 로고_yellow_흰배경.png  ② 참조용_패키지_냉동양념양꼬치.png (이 순서로 2장)
+
+I uploaded two images. Image 1 is our logo file. Image 2 is our illustrated package concept for a frozen marinated lamb skewer product. Turn image 2 into a plain studio photograph of the real, mass-produced retail carton, the kind of photo used on an online shopping product page.
+
+Keep from image 2: the box shape and proportions, the layout and position of every element, the colors (deep burgundy wine box, golden yellow band across the top), the logo position and size, the product name position, and the window. Do not redesign, move, or add elements.
+
+Logo: use the logo from image 1 exactly as it is, printed in solid black on the yellow band, in the same spot as in image 2. Do not redraw it, and keep the small hand holding a yellow card that replaces the first "l".
+
+Turn the illustration into real materials:
+- Box: printed paperboard carton with a matte coated finish, sharp machine folds, slightly rounded corners, the glue flap seam visible on the side edge, one tiny handling scuff on a corner. Flat offset-printed ink: no outlines, no cel shading, no gloss.
+- Window: a die-cut window covered with thin clear film, with soft reflections and one faint crease. Behind it, five raw frozen marinated lamb skewers lie side by side in a black plastic tray sealed with a second, tight clear film: irregular dark red lamb chunks about 2-3 cm with a few small pieces of white fat, on thin round bamboo skewers, with a light brownish marinade, a few black pepper specks and a thin white frost. Raw and frozen, not cooked, no dry spice coating.
+- If image 2 shows drawn food anywhere outside the window, replace it with a printed food photo in the same spot and size: grilled lamb skewers with browned, slightly charred edges and cumin-chili seasoning, with the slightly flat look of ink printed on board.
+
+Text: render only the logo and the Korean word "양꼬치" in large bold white letters, in the place of the biggest product name text in image 2. Keep every other text area of image 2 (smaller words, the black pill label, small lines) as empty shapes with no letters. Do not invent any other words, numbers or icons.
+
+Photography: the box stands upright on a seamless light gray paper backdrop, turned about 15 degrees to show a little of its right side. One large softbox from the upper left, a white bounce card on the right, a soft contact shadow under the box. 100 mm macro lens, f/11, ISO 100, neutral daylight white balance (5500K). Colors the way printed ink really looks, not boosted. No steam, no ice cubes, no props, no glow. Landscape 3:2.
+
+==================== 3-2 냉동양념양꼬치 · 스튜디오패키지컷 ====================
+[첨부할 이미지] 마스터 컷 1장 (컷1 결과에서 로고·제품명을 원본으로 고친 완성본)
+
+Use the box in the uploaded image as the product. Keep its design, colors, logo, Korean text and window exactly as they are; change only the camera angle and the scene.
+
+Packshot for an online shopping product page: the same box standing upright on a seamless light gray paper backdrop, seen from a three-quarter angle slightly above, showing the front, the narrow right side panel and a bit of the top. The box is about 24 cm wide, 15 cm tall and 4 cm deep. Right side panel: the same burgundy, the yellow band continuing at the top, and a small white panel with a few tiny blank lines. In front of the box lies one small unprinted silver foil stick sachet of seasoning, about 10 cm long.
+
+Lighting: one large softbox from the upper left, a white bounce card on the right, a soft shadow falling on the backdrop, a gentle highlight along the window film and the top edge. Full-frame camera, 100 mm macro lens, f/11, 1/125 s, ISO 100, 5500K.
+
+Real retail details: matte paperboard, sharp folds, slightly rounded corners, a faint crease in the window film, a hairline misregistration where the yellow band meets the burgundy. The box is dry and clean, with no frost or water drops on the outside. Natural printed color. No other props, no mirror reflection on the floor, no extra text. Landscape 3:2.
+
+==================== 3-3a 냉동양념양꼬치 · 편의점현장컷 ====================
+[첨부할 이미지] 컷2 결과 1장
+
+Use the box in the uploaded image as the product. Keep its design, colors, logo and Korean text exactly as they are.
+
+Candid smartphone photo inside a small Korean convenience store, taken by a customer standing in front of an upright glass-door freezer with the door just opened. On the middle wire shelf, three of these boxes stand upright one behind another, front facing out. The front box is slightly turned and in focus; the ones behind it are a little out of line. A few frost specks on the wire shelf and along the top edge of the front box. On the shelf edge, a white plastic price rail holds a small white paper price tag showing only "8,900". Other frozen products appear only at the left and right edges of the frame, cut off by the frame, with no readable text or logos.
+
+Light: cool white LED strip inside the freezer plus the store ceiling lights, a slight green-blue cast, brighter on the upper shelf and darker toward the bottom. The open glass door at the left edge of the frame is fogged with condensation and faintly reflects the store aisle.
+
+Phone main camera, 26 mm equivalent, f/1.8, handheld from about 50 cm, frame tilted about 2 degrees, mild noise in the shadows, typical phone sharpening and HDR processing. An ordinary, unstaged, slightly imperfect shopping photo. No people, no hands, no store signage, no brand logos, no bokeh balls. Vertical 3:4 (use 2:3 if 3:4 is not available).
+
+==================== 3-3b 냉동양념양꼬치 · 편의점현장컷_실사합성 ====================
+[첨부할 이미지] ① 직접 찍은 편의점 냉동고 선반 사진(빈 칸이 보이게)  ② 컷2 결과 (이 순서로 2장)
+
+Image 1 is a photo I took of a shelf in a convenience store freezer. Image 2 is our product box. Put three of the boxes from image 2 into the empty space on the shelf in image 1, standing upright one behind another with the front facing out, as if a store clerk had just stocked them.
+
+Keep image 1 exactly as it is everywhere else: same framing, light, colors, noise and sharpness. Match the boxes to the photo: the same perspective and scale as the products next to them (the box is about 24 cm wide and 15 cm tall), the same freezer light color and falloff, a soft shadow on the shelf, and the same slight softness and noise as the rest of the photo. Keep the box design, logo and Korean text from image 2 exactly. Do not add or change anything else, including the price tags.
+
+==================== 3-4 냉동양념양꼬치 · 조리후연출컷 ====================
+[첨부할 이미지] 컷2 결과 1장
+
+Use the box in the uploaded image as the product box in the background. Keep its design, colors, logo and Korean text exactly as they are.
+
+Casual photo of a solo meal on a small desk in a Korean one-room studio apartment, soft overcast daylight from a window on the left. On a plain white plate lined with a crumpled sheet of air fryer parchment paper: five cooked lamb skewers on thin round bamboo skewers about 20 cm long, each with four or five irregular chunks of lamb and a few small pieces of fat, browned and lightly charred at the edges, unevenly dusted with ground cumin, red chili powder and sesame seeds. A little rendered fat has soaked into the paper and the bamboo tips are slightly scorched. At the edge of the plate, a small pile of dry seasoning poured from the torn-open silver sachet lying next to it. Behind the plate, slightly out of focus: the product box, its end flap torn open and one corner creased. Around it: the edge of an open laptop, a phone lying face down, a soda can turned with its label away from the camera, a crumpled paper towel, a few seasoning grains on the desk.
+
+35 mm lens, f/2.8, 1/100 s, ISO 400, 5500K, soft window shadows, the right side of the frame a little darker. Real home-cooked frozen food: visible meat fibers, uneven browning, matte surfaces, an ordinary portion. Unstyled and everyday, like eating alone after class. No steam, no smoke, no herb garnish, no lemon, no wooden board, no candles, no glossy sauce, no extra text. Landscape 3:2.
+
+==================== 4-1 차오멘 · 레퍼런스변환컷 ====================
+[첨부할 이미지] ① 로고_yellow_흰배경.png  ② 참조용_패키지_차오멘.png (이 순서로 2장)
+
+Use the two uploaded images. Image 1 is our logo file. Image 2 is our flat illustrated design for a square instant stir-fry noodle cup. Turn image 2 into a real product photograph of this cup, as if it were a mass-produced item sold in a Korean convenience store. Do not redesign it.
+
+Keep: the layout and proportions of every element, the deep navy side walls, the yellow lid, and the position and size of the logo. Reproduce the logo from image 1 in black on the lid with the same shape, including the small fist-and-card mark that replaces the first "l". Do not redraw or re-letter it.
+
+Design changes, only these three:
+1. The cartoon noodle drawing on the front wall becomes a printed photograph of real chow mein in a shallow white bowl: wavy wheat noodles stir-fried in dark soy sauce with shredded cabbage, thin carrot strips and bean sprouts, like the serving-suggestion photos printed on Korean instant noodle packaging.
+2. Add a narrow plain yellow band, about 1 cm tall, around the top of the side walls just under the rim.
+3. Text: keep only "yellow" (the logo), "차오멘" and "CHOW MEIN", spelled exactly like this. Leave every other text area plain navy. No new words, badges, stickers or icons.
+
+Make it a physical object: a square polypropylene cup about 14 cm wide and 6 cm tall, with rounded corners and a rolled rim; a flat peel-off paper-foil lid heat-sealed on top, with a small peel tab in one corner over a cluster of tiny drain holes; thin clear shrink film around the whole cup, with small wrinkles at the corners and soft streaky reflections. Satin printed surfaces with the color of printed ink, a little less contrast than a screen. Small flaws: a tiny dent in the film, a slightly uneven lid seal edge.
+
+Photo: product shot on light grey seamless paper. Camera slightly above the cup so a sliver of the lid shows, with natural lens perspective, not a flat front view. 100mm lens at f/11, one large softbox from the upper left, white bounce card on the right, neutral 5500K white balance with no yellow tint, soft contact shadow under the cup. Landscape 3:2.
+
+Not an illustration and not CGI: no vector edges, no glossy food, no oversaturated colors, no steam, no glow.
+
+==================== 4-2 차오멘 · 스튜디오패키지컷 ====================
+[첨부할 이미지] 컷1 결과 1장
+
+Use the uploaded photo of our noodle cup. Photograph the exact same cup again: same design, colors, yellow band, lid, logo and lettering. Do not change, add or re-letter any printing.
+
+New angle: three-quarter view from about 30 degrees above, one front corner toward the camera, so the yellow lid and two side walls are visible. The second side wall is navy with the same yellow band and a small plain white panel near the bottom for the nutrition label, left blank. The cup stands alone on light grey seamless paper.
+
+Camera and light: 100mm lens at f/11, ISO 100, large softbox from the upper left, white bounce card on the right, neutral 5500K white balance with no warm cast, soft contact shadow. The softbox shows as one long soft highlight across the shrink film on the lid; the film has fine wrinkles at the corners and a tiny crease on one edge; the rim corners are slightly rounded; the printing looks like ink on plastic, a little softer than a screen image. Plain e-commerce product photo, nothing else in frame. Landscape 3:2.
+
+==================== 4-3 차오멘 · 편의점현장컷 ====================
+[첨부할 이미지] 컷1 또는 컷2 결과 1장
+
+Use the uploaded photo as the exact cup design.
+
+A phone snapshot a shopper took in the instant noodle aisle of a Korean convenience store, standing and looking slightly down at the middle shelf of a white metal gondola. Six of the same square cup noodles sit in a block, three wide and two high, with more rows behind: deep navy side walls with a narrow yellow band under the rim, the front wall showing a printed chow mein photo and a white title, flat yellow lids with a small black "yellow" wordmark. They are not lined up neatly: one front cup is turned a little, another sits a few centimetres back, and each cup catches the light slightly differently. At the left and right frame edges, partly cut off, are other generic cup noodles in red, white and orange packaging with no readable brand names. A clear plastic price strip runs along the shelf edge with a small white paper price label showing large black numerals "1,800" and a line of tiny unreadable print above them. Next to it a small blank yellow card-shaped shelf talker sticks out from the strip.
+
+Cool white ceiling LED light, slightly cool white balance, small bright reflections of the ceiling lights on the shrink film, a darker band of shadow under the shelf above. Phone main camera, about 26mm equivalent: the cup block is sharp and the farther shelves are only slightly soft. A little noise in the shadows, mild phone HDR, shelf lines tilted about 2 degrees. No people, no readable signs, no store logos. Ordinary and unstaged. Landscape 3:2.
+
+==================== 4-4 차오멘 · 조리후연출컷 ====================
+[첨부할 이미지] 컷1 결과 1장
+
+Use the uploaded photo as the exact cup design.
+
+An everyday photo on a small desk in a Korean one-room apartment, late afternoon. In the foreground sits the same square cup, opened and ready to eat: deep navy side walls with a narrow yellow band under the rim, the front wall with its printed food photo turned toward the camera. The yellow paper lid has been peeled off completely and lies printed side up next to the cup, slightly curled, with a few water drops on it, its black "yellow" wordmark visible. Inside, freshly mixed instant stir-fry noodles fill about three-quarters of the cup: medium wavy fried noodles unevenly coated in a dark brown soy-based sauce, a few paler strands, small soft bits of rehydrated cabbage and carrot, a few limp bean sprout pieces, a little sauce smeared on the inner wall. A pair of split wooden disposable chopsticks rests across the rim, and a torn, empty silver sauce sachet lies beside the cup. Behind, out of focus: the corner of an open laptop and a phone lying face down. Nothing else on the desk.
+
+Daylight from a window on the left, about 5000K with a slight warm tint, shadows falling to the right. 35mm lens at f/2.8 from a seated position, about 45 degrees down, focus on the noodles, slight grain. The food looks like a cheap convenience store cup noodle, matte to satin, not shiny. No steam, no hands, no garnish. Landscape 3:2.
+
+==================== 5 4종 단체컷 ====================
+[첨부할 이미지] 4종 마스터 컷 4장
+
+The four attached photos show our four finished packages. Keep each printed design exactly as it is: same colors, same yellow band and logo, same text, same layout. Do not redraw the logos.
+
+Create one catalogue photo of all four products together on light warm grey seamless paper. From left to right: the burgundy frozen lamb skewer carton lying flat, the orange chilled orange chicken sleeve lying flat and slightly in front of it, the red tomato mala cup noodle standing upright, and the navy square chow mein cup standing upright with its yellow lid. Group them at slightly different depths with small overlaps, the way a photographer arranges real products, not in a perfect row.
+
+Keep real relative sizes: the lamb carton about 24 x 15 cm, the orange chicken tray about 17 x 12 cm, the cup noodle about 11 cm across the top, the chow mein cup about 14 cm wide and 6 cm tall.
+
+Camera slightly above the products, three-quarter view from the front, 70mm lens at f/11 so everything is sharp. One large softbox from the upper left, white card fill on the right, soft contact shadows, neutral daylight white balance. Visible paper grain on the cartons, long soft highlights on the shrink film, one sleeve sitting a few millimeters crooked. No props, no food outside the packages, no added text or badges. Landscape 16:9.

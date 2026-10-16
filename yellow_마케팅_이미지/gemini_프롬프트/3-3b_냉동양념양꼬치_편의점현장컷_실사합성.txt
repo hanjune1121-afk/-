@@ -1,0 +1,3 @@
+Image 1 is a photo I took of a shelf in a convenience store freezer. Image 2 is our product box. Put three of the boxes from image 2 into the empty space on the shelf in image 1, standing upright one behind another with the front facing out, as if a store clerk had just stocked them.
+
+Keep image 1 exactly as it is everywhere else: same framing, light, colors, noise and sharpness. Match the boxes to the photo: the same perspective and scale as the products next to them (the box is about 24 cm wide and 15 cm tall), the same freezer light color and falloff, a soft shadow on the shelf, and the same slight softness and noise as the rest of the photo. Keep the box design, logo and Korean text from image 2 exactly. Do not add or change anything else, including the price tags.
