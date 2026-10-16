@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/brand.css">
+<script src="../assets/products.js"></script><script src="scene_util.js"></script>
+<style>
+.it { display:flex; justify-content:space-between; font-weight:700; font-size:22px; padding:5px 0; color:#fff; }
+.it b { font-family:BHS; font-weight:400; color:var(--y); font-size:28px; }
+</style></head>
+<body data-w="1080" data-h="1080"><script>
+let s = `<defs><pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r="3" fill="#E9B800"/></pattern></defs>
+  <rect width="1080" height="1080" fill="url(#dots)" opacity=".7"/>
+  <circle cx="540" cy="700" r="300" fill="#FFF4C2"/>`;
+// open box: back flap, products, front
+s += `<g transform="translate(270,600)">
+  <path d="M0,60 L80,0 L560,0 L480,60 Z" fill="#D9A900" stroke="${K}" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M80,0 L130,-150 L610,-150 L560,0 Z" fill="${Y}" stroke="${K}" stroke-width="8" stroke-linejoin="round"/>
+  ${logo(250, -110, 56)}
+</g>`;
+s += place('ls', 330, 740, 250) + place('oc', 540, 730, 220);
+s += place('mc', 670, 680, 120) + place('cm', 380, 680, 150);
+s += `<g transform="translate(270,600)">
+  <path d="M480,60 L560,0 L560,250 L480,330 Z" fill="#D9A900" stroke="${K}" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="0" y="60" width="480" height="270" rx="10" fill="${Y}" stroke="${K}" stroke-width="8"/>
+  <text x="240" y="160" text-anchor="middle" font-family="BHS" font-size="76" fill="${K}">혼중 세트</text>
+  <text x="240" y="210" text-anchor="middle" font-family="Noto" font-weight="900" font-size="26" fill="${K}">혼자 먹는 중식 코스 4종</text>
+  <rect x="0" y="246" width="480" height="84" fill="${K}"/>
+  <text x="240" y="302" text-anchor="middle" font-family="BHS" font-size="40" fill="${Y}">이게 편의점에? 반칙이지!</text>
+  <path d="M-80,40 L0,60 L0,330 L-60,300 Z" fill="#FFE066" stroke="${K}" stroke-width="8" stroke-linejoin="round"/>
+</g>`;
+s += yellowCard(150, 940, 90, 124, -14, '반칙!', { fs: 27, sw: 6, lines: false });
+document.body.innerHTML = `<div class="canvas" style="width:1080px;height:1080px">
+  <svg class="abs" width="1080" height="1080" style="left:0;top:0">${s}</svg>
+  <img class="abs" src="../assets/logo_mark_k.png" style="left:64px;top:56px;height:56px">
+  <div class="abs tag" style="left:64px;top:140px;font-size:30px;padding:8px 24px 5px">기획세트</div>
+  <div class="abs bhs" style="left:60px;top:200px;font-size:72px;line-height:1.12">중식 4종을<br>한 번에,<br><span style="background:#111;color:var(--y);padding:0 14px;border-radius:12px">혼자서도 코스로</span></div>
+  <div class="abs" style="right:44px;top:140px;width:340px;background:#111;border-radius:26px;padding:18px 26px 14px;transform:rotate(3deg);box-shadow:10px 10px 0 rgba(0,0,0,.2)">
+    <div class="it"><span>양꼬치</span><span>8,900</span></div>
+    <div class="it"><span>오렌지치킨</span><span>4,800</span></div>
+    <div class="it"><span>차오멘</span><span>1,800</span></div>
+    <div class="it" style="border-bottom:2px dashed #666;padding-bottom:10px"><span>토마토마라컵라면</span><span>1,800</span></div>
+    <div class="it" style="color:#aaa;padding-top:10px"><span>정가 합계</span><span style="text-decoration:line-through">17,300원</span></div>
+    <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="color:#fff;font-weight:900;font-size:24px;white-space:nowrap">세트가</span><span class="bhs" style="color:var(--y);font-size:56px;white-space:nowrap">14,900<span style="font-size:34px">원</span></span></div>
+  </div>
+</div>`;
+</script></body></html>

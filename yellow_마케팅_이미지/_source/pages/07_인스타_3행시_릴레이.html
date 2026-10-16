@@ -1,0 +1,47 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/brand.css">
+<script src="../assets/products.js"></script><script src="scene_util.js"></script>
+<style>
+.line { display:flex; align-items:center; gap:26px; padding:12px 0; border-bottom:4px dashed #111; }
+.line:last-child { border-bottom:none; }
+.init { width:92px; height:92px; flex:none; border-radius:24px; background:#111; color:var(--y); font-family:BHS; font-size:64px; display:flex; align-items:center; justify-content:center; padding-top:6px; }
+.ltxt { font-family:BHS; font-size:46px; line-height:1.15; }
+.ltxt b { font-weight:400; background:var(--y); padding:0 6px; }
+.step { flex:1; background:#111; color:#fff; border-radius:24px; padding:22px 20px 20px; position:relative; }
+.step .n { font-family:BHS; color:var(--y); font-size:30px; }
+.step .t { font-weight:900; font-size:27px; line-height:1.3; margin-top:6px; }
+.step .d { font-weight:500; font-size:19px; color:#ddd; margin-top:6px; line-height:1.35; }
+</style></head>
+<body data-w="1080" data-h="1350"><script>
+const mini = ['oc', 'mc', 'ls', 'cm'].map(k => {
+  const w = { oc: 120, mc: 70, ls: 130, cm: 100 }[k];
+  return `<div style="width:${w}px">${FN[k]({ attrs: `width="${w}"`, card: false })}</div>`;
+}).join('');
+document.body.innerHTML = `<div class="canvas" style="width:1080px;height:1350px">
+  <svg class="abs" width="1080" height="1350" style="left:0;top:0">
+    <defs><pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r="3" fill="#E9B800"/></pattern></defs>
+    <rect width="1080" height="1350" fill="url(#dots)" opacity=".7"/>
+    ${yellowCard(930, 150, 130, 180, 14, '', { sw: 8 })}
+  </svg>
+  <img class="abs" src="../assets/logo_mark_k.png" style="left:64px;top:56px;height:56px">
+  <div class="abs tag" style="left:64px;top:140px;font-size:30px;padding:8px 24px 5px">INSTAGRAM EVENT</div>
+  <div class="abs bhs" style="left:60px;top:200px;font-size:118px;line-height:1.02">옐로우 3행시<br>댓글 릴레이</div>
+
+  <div class="abs" style="left:56px;right:56px;top:462px;background:#fff;border:7px solid #111;border-radius:36px;padding:16px 40px 14px;box-shadow:14px 14px 0 #111">
+    <div style="position:absolute;top:-26px;right:40px" class="tag"><span style="font-size:26px">예시</span></div>
+    <div class="line"><div class="init">옐</div><div class="ltxt">옐로카드 줘야겠는데?</div></div>
+    <div class="line"><div class="init">로</div><div class="ltxt">로컬 중식 맛이 <b>편의점 가격</b></div></div>
+    <div class="line"><div class="init">우</div><div class="ltxt">우리 동네에서 이건 <b>반칙</b>이지!</div></div>
+  </div>
+
+  <div class="abs" style="left:56px;right:56px;top:880px;display:flex;gap:18px">
+    <div class="step"><div class="n">STEP 1</div><div class="t">게시물에<br>3행시 댓글</div><div class="d">'옐·로·우'로<br>반칙급 3행시 작성</div></div>
+    <div class="step"><div class="n">STEP 2</div><div class="t">친구 태그로<br>릴레이 연결</div><div class="d">@친구 다음은 너!<br>친구가 이어 쓰기</div></div>
+    <div class="step"><div class="n">STEP 3</div><div class="t">베스트 3행시<br>상품 증정</div><div class="d">릴레이에 참여한<br>친구도 함께 증정</div></div>
+  </div>
+
+  <div class="abs" style="left:56px;right:56px;bottom:46px;height:150px;background:var(--y);border:6px solid #111;border-radius:28px;display:flex;align-items:center;padding:0 30px;gap:24px">
+    <div><div style="font-weight:900;font-size:24px">당첨 선물</div><div class="bhs" style="font-size:46px;line-height:1.05">옐로우 중식<br>4종 세트</div></div>
+    <div style="flex:1;display:flex;align-items:flex-end;justify-content:flex-end;gap:12px">${mini}</div>
+  </div>
+</div>`;
+</script></body></html>

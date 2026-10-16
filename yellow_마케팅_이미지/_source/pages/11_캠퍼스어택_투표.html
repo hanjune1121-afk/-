@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/brand.css">
+<script src="../assets/products.js"></script><script src="scene_util.js"></script>
+<style>
+.vrow { display:flex; align-items:center; gap:18px; padding:12px 0; }
+.rank { width:64px; height:64px; border-radius:16px; background:#111; color:var(--y); font-family:BHS; font-size:34px; display:flex; align-items:center; justify-content:center; padding-top:4px; flex:none; }
+.school { width:170px; font-weight:900; font-size:30px; flex:none; }
+.bar { flex:1; height:46px; border:4px solid #111; border-radius:99px; overflow:hidden; background:#fff; }
+.bar i { display:block; height:100%; background:#111; border-radius:99px; }
+.pct { width:86px; text-align:right; font-family:BHS; font-size:40px; flex:none; }
+.step { flex:1; background:#fff; border:5px solid #111; border-radius:24px; padding:18px 18px 16px; }
+.step .n { font-family:BHS; font-size:28px; }
+.step .t { font-weight:900; font-size:25px; line-height:1.3; margin-top:6px; }
+</style></head>
+<body data-w="1080" data-h="1350"><script>
+const votes = [['A대학교', 38], ['B대학교', 27], ['C대학교', 21], ['D대학교', 14]];
+const rows = votes.map(([n, v], i) => `<div class="vrow"><div class="rank" style="${i === 0 ? 'background:var(--y);color:#111;border:4px solid #111' : ''}">${i + 1}</div>
+  <div class="school">${n}</div><div class="bar"><i style="width:${v / 40 * 100}%;${i === 0 ? 'background:var(--y);border-right:4px solid #111' : ''}"></i></div><div class="pct">${v}%</div></div>`).join('');
+let svg = `<defs><pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r="3" fill="#E9B800"/></pattern></defs>
+  <rect width="1080" height="1350" fill="url(#dots)" opacity=".7"/>
+  ${yellowCard(940, 250, 120, 165, 14, '투표!', { fs: 34, sw: 8 })}
+  ${vanTruck(140, 1160, 0.9)}`;
+document.body.innerHTML = `<div class="canvas" style="width:1080px;height:1350px">
+  <svg class="abs" width="1080" height="1350" style="left:0;top:0">${svg}</svg>
+  <img class="abs" src="../assets/logo_mark_k.png" style="left:64px;top:56px;height:56px">
+  <div class="abs tag" style="left:64px;top:140px;font-size:30px;padding:8px 24px 5px">CAMPUS ATTACK</div>
+  <div class="abs bhs" style="left:60px;top:204px;font-size:100px;line-height:1.08">우리 학교에<br><span style="background:#111;color:var(--y);padding:0 16px;border-radius:14px">반칙 호프</span> 열어줘!</div>
+  <div class="abs" style="left:64px;top:430px;font-weight:700;font-size:30px">투표 1위 캠퍼스에 옐로우 일일호프가 찾아갑니다</div>
+  <div class="abs" style="left:56px;right:56px;top:500px;background:#fff;border:7px solid #111;border-radius:32px;padding:20px 34px 14px;box-shadow:12px 12px 0 #111">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span class="bhs" style="font-size:38px">실시간 투표 현황</span><span style="font-weight:700;font-size:20px;color:#666">*예시 화면</span></div>
+    ${rows}
+  </div>
+  <div class="abs" style="left:56px;right:56px;top:966px;display:flex;gap:18px">
+    <div class="step"><div class="n">STEP 1</div><div class="t">댓글로<br>학교 이름 남기기</div></div>
+    <div class="step"><div class="n">STEP 2</div><div class="t">스토리 공유하면<br>+1표 추가</div></div>
+    <div class="step" style="background:#111;color:#fff"><div class="n" style="color:var(--y)">STEP 3</div><div class="t">1위 학교에<br>반칙 호프 오픈!</div></div>
+  </div>
+  <div class="abs bhs" style="right:64px;bottom:64px;text-align:right;font-size:64px;line-height:1.05">1위 캠퍼스로<br>출동!</div>
+</div>`;
+</script></body></html>

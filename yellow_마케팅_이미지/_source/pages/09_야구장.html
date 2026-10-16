@@ -1,0 +1,90 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/brand.css">
+<script src="../assets/products.js"></script><script src="scene_util.js"></script></head>
+<body data-w="1920" data-h="1080"><script>
+let s = `<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#121633"/><stop offset="1" stop-color="#2C3466"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#FFF6C8" stop-opacity=".85"/><stop offset=".4" stop-color="#FFF6C8" stop-opacity=".25"/><stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/></radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34343E"/><stop offset="1" stop-color="#1E1E24"/></linearGradient>
+</defs>
+<rect width="1920" height="1080" fill="url(#sky)"/>`;
+// light towers
+[[170, 70], [860, 40]].forEach(([x, y]) => {
+  s += `<circle cx="${x}" cy="${y + 30}" r="260" fill="url(#glow)"/>
+    <line x1="${x}" y1="${y + 60}" x2="${x}" y2="330" stroke="#0B0D1F" stroke-width="12"/>
+    <rect x="${x - 80}" y="${y}" width="160" height="64" rx="6" fill="#0B0D1F"/>`;
+  for (let i = 0; i < 6; i++) for (let j = 0; j < 2; j++) s += `<circle cx="${x - 62 + i * 25}" cy="${y + 18 + j * 28}" r="9" fill="#FFFBE6"/>`;
+});
+// stands with crowd
+const R = rng(42);
+for (let r = 0; r < 11; r++) {
+  const y = 300 + r * 24;
+  s += `<rect x="0" y="${y}" width="1920" height="24" fill="${r % 2 ? '#22284A' : '#2A3157'}"/>`;
+  for (let x = 8 + (r % 2) * 9; x < 1920; x += 18) {
+    const c = ['#5B6290', '#7B6F8F', '#4D5A86', '#8C7A6A', '#6C7AA8'][Math.floor(R() * 5)];
+    s += `<circle cx="${x + (R() - .5) * 4}" cy="${y + 10}" r="7" fill="${c}"/>`;
+    if (R() < 0.16) { const a = (R() - .5) * 40; s += `<rect x="${x - 7}" y="${y - 16}" width="14" height="19" rx="2" fill="${Y}" stroke="#111" stroke-width="1.5" transform="rotate(${a} ${x} ${y - 6})"/>`; }
+  }
+}
+// outfield wall with ad boards
+s += `<rect x="0" y="564" width="1920" height="44" fill="#14402A"/>`;
+for (let i = 0; i < 8; i++) {
+  const x = 10 + i * 240, yel = i % 2 === 0;
+  s += `<rect x="${x}" y="569" width="226" height="34" rx="4" fill="${yel ? Y : '#1F5C3B'}"/>`;
+  if (yel) s += logo(x + 113 - 24 * LOGO_RATIO / 2, 574, 24);
+  else s += `<text x="${x + 113}" y="594" text-anchor="middle" font-family="BHS" font-size="20" fill="${Y}">이게 편의점에? 반칙이지!</text>`;
+}
+// field
+s += `<rect x="0" y="608" width="1920" height="130" fill="#2F8A41"/>`;
+for (let i = 0; i < 12; i++) s += `<rect x="${i * 170}" y="608" width="85" height="130" fill="#36974A"/>`;
+s += `<path d="M300,738 L760,608" stroke="#fff" stroke-width="5" opacity=".8"/><path d="M1620,738 L1160,608" stroke="#fff" stroke-width="5" opacity=".8"/>`;
+// concourse floor
+s += `<rect x="0" y="738" width="1920" height="342" fill="url(#floor)"/><line x1="0" y1="738" x2="1920" y2="738" stroke="#111" stroke-width="6"/>`;
+for (let i = -10; i <= 10; i++) s += `<line x1="${960 + i * 120}" y1="738" x2="${960 + i * 330}" y2="1080" stroke="#44444F" stroke-width="2"/>`;
+
+// jumbotron
+s += `<rect x="1330" y="40" width="530" height="290" rx="10" fill="#0A0A0A" stroke="#555" stroke-width="8"/>
+  <line x1="1480" y1="330" x2="1480" y2="380" stroke="#0A0A0A" stroke-width="16"/><line x1="1710" y1="330" x2="1710" y2="380" stroke="#0A0A0A" stroke-width="16"/>
+  ${yellowCard(1445, 182, 110, 150, -10, '', { sw: 7, lineColor: Y })}
+  <text x="1560" y="140" font-family="BHS" font-size="52" fill="${Y}">옐로우카드</text>
+  <text x="1560" y="200" font-family="BHS" font-size="52" fill="${Y}">타임!</text>
+  <text x="1560" y="250" font-family="Noto" font-weight="700" font-size="22" fill="#fff">상대 팀 실책이 나오면</text>
+  <text x="1560" y="282" font-family="Noto" font-weight="700" font-size="22" fill="#fff">옐로우카드를 들어라!</text>`;
+
+// ===== booth
+s += `<rect x="250" y="296" width="860" height="80" rx="10" fill="${Y}" stroke="${K}" stroke-width="8"/>
+  ${logo(285, 311, 50)}
+  <text x="1080" y="354" text-anchor="end" font-family="BHS" font-size="46" fill="${K}">반칙 매점</text>`;
+// awning: alternating stripes with scalloped edge
+for (let i = 0; i < 11; i++) {
+  const x = 240 + i * 80;
+  s += `<path d="M${x},376 L${x + 80},376 L${x + 80},420 Q${x + 40},466 ${x},420 Z" fill="${i % 2 ? K : Y}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>`;
+}
+// back wall + menu
+s += `<rect x="284" y="440" width="792" height="300" fill="#3B3B46"/>
+  <rect x="300" y="458" width="500" height="128" rx="12" fill="${K}" stroke="${Y}" stroke-width="5"/>
+  <text x="320" y="494" font-family="BHS" font-size="25" fill="${Y}">MENU · 편의점 가격 그대로</text>
+  ${[['양꼬치', '8,900'], ['오렌지치킨', '4,800'], ['마라컵라면', '1,800'], ['차오멘', '1,800']].map(([n, p], i) => {
+    const cx = 320 + (i % 2) * 240, cy = 530 + Math.floor(i / 2) * 34;
+    return `<text x="${cx}" y="${cy}" font-family="Noto" font-weight="700" font-size="20" fill="#fff">${n}</text><text x="${cx + 214}" y="${cy}" text-anchor="end" font-family="BHS" font-size="22" fill="${Y}">${p}</text>`;
+  }).join('')}
+  <rect x="816" y="458" width="244" height="128" rx="12" fill="${Y}" stroke="${K}" stroke-width="5"/>
+  <text x="938" y="498" text-anchor="middle" font-family="BHS" font-size="26" fill="${K}">직관 안주</text>
+  <text x="938" y="542" text-anchor="middle" font-family="BHS" font-size="36" fill="${K}">반칙 세트</text>
+  <text x="938" y="570" text-anchor="middle" font-family="Noto" font-weight="700" font-size="16" fill="${K}">양꼬치 + 오렌지치킨</text>`;
+s += `<rect x="262" y="376" width="22" height="600" fill="${K}"/><rect x="1076" y="376" width="22" height="600" fill="${K}"/>`;
+// products on counter
+s += place('ls', 300, 742, 230) + place('oc', 540, 742, 190) + place('mc', 745, 742, 84) + place('mc', 830, 742, 84) + place('cm', 925, 742, 140);
+// counter
+s += `<rect x="240" y="736" width="880" height="22" rx="6" fill="${K}"/>
+  <rect x="256" y="758" width="848" height="230" fill="${Y}" stroke="${K}" stroke-width="8"/>
+  <text x="680" y="845" text-anchor="middle" font-family="BHS" font-size="60" fill="${K}">직관 안주가 이 가격?</text>
+  <rect x="440" y="872" width="480" height="84" rx="16" fill="${K}"/>
+  <text x="680" y="934" text-anchor="middle" font-family="BHS" font-size="62" fill="${Y}">반칙이지!</text>`;
+// hand with card (foreground)
+s += handCard(1500, 900, 0.95, -8, '반칙!', 10);
+// fan picket
+s += yellowCard(1210, 880, 120, 160, -14, '실책!', { fs: 40, sw: 8, lineColor: Y });
+s += `<line x1="1226" y1="955" x2="1240" y2="1080" stroke="${K}" stroke-width="16"/>`;
+
+document.body.innerHTML = `<svg width="1920" height="1080" viewBox="0 0 1920 1080">${s}</svg>`;
+</script></body></html>

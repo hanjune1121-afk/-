@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/brand.css">
+<script src="../assets/products.js"></script><script src="scene_util.js"></script>
+<style>
+.mrow { display:flex; align-items:center; gap:22px; padding:8px 0; border-bottom:2px dashed #555; }
+.mrow:last-child { border-bottom:none; }
+.mthumb { width:110px; height:70px; display:flex; align-items:center; justify-content:center; }
+.mname { color:#fff; font-weight:900; font-size:29px; line-height:1.2; }
+.mspec { color:#bbb; font-weight:500; font-size:19px; }
+.mprice { margin-left:auto; color:var(--y); font-family:BHS; font-size:46px; }
+.info { display:flex; gap:18px; font-size:26px; font-weight:700; padding:4px 0; }
+.info b { font-family:BHS; font-weight:400; background:#111; color:var(--y); padding:2px 14px 0; border-radius:8px; flex:none; }
+</style></head>
+<body data-w="1080" data-h="1528"><script>
+const menu = [['ls', '냉동양념양꼬치', '5개입 · 시즈닝 포함', '8,900'], ['oc', '오렌지치킨', '180g', '4,800'], ['cm', '차오멘', '중화 볶음면', '1,800'], ['mc', '토마토마라컵라면', '얼큰한 마무리', '1,800']].map(([k, n, sp, p]) => {
+  const w = { oc: 92, mc: 48, ls: 104, cm: 76 }[k];
+  return `<div class="mrow"><div class="mthumb"><div style="width:${w}px">${FN[k]({ attrs: `width="${w}"`, card: false })}</div></div>
+    <div><div class="mname">${n}</div><div class="mspec">${sp}</div></div><div class="mprice">${p}<span style="font-size:30px">원</span></div></div>`;
+}).join('');
+let svg = `<defs><pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r="3" fill="#E9B800"/></pattern></defs>
+  <rect width="1080" height="1528" fill="url(#dots)" opacity=".7"/>
+  <g stroke="${K}" stroke-width="10" stroke-linecap="round"><line x1="540" y1="555" x2="540" y2="590"/><line x1="480" y1="568" x2="500" y2="600"/><line x1="600" y1="568" x2="580" y2="600"/></g>
+  ${beerMug(410, 735, 0.88, -14)}
+  <g transform="translate(670,735) scale(-1,1)">${beerMug(0, 0, 0.88, -14)}</g>
+  ${skewer(100, 870, 290, 610, 1.2, 7)}
+  ${skewer(140, 895, 320, 655, 1.2, 19)}
+  ${yellowCard(910, 700, 120, 165, 14, '반칙!', { fs: 34, sw: 8 })}`;
+document.body.innerHTML = `<div class="canvas" style="width:1080px;height:1528px">
+  <svg class="abs" width="1080" height="1528" style="left:0;top:0">${svg}</svg>
+  <img class="abs" src="../assets/logo_mark_k.png" style="left:64px;top:60px;height:56px">
+  <div class="abs tag" style="right:64px;top:66px;font-size:30px;padding:8px 26px 5px">ONE DAY PUB</div>
+  <div class="abs bhs" style="left:0;right:0;top:160px;text-align:center;font-size:76px;line-height:1">옐로우 일일호프</div>
+  <div class="abs bhs" style="left:0;right:0;top:250px;text-align:center;font-size:210px;line-height:1;letter-spacing:-.02em">반칙 호프</div>
+  <div class="abs" style="left:0;right:0;top:478px;text-align:center"><span class="bhs" style="background:#111;color:var(--y);font-size:50px;padding:6px 28px 2px;border-radius:14px">안주가 편의점 가격? 반칙이지!</span></div>
+  <div class="abs" style="left:56px;right:56px;top:905px;background:#111;border-radius:32px;padding:16px 40px 8px;box-shadow:12px 12px 0 rgba(0,0,0,.2)">
+    <div style="display:flex;justify-content:space-between;align-items:baseline"><span class="bhs" style="color:var(--y);font-size:40px">MENU</span><span style="color:#fff;font-weight:700;font-size:22px">편의점 가격 그대로</span></div>
+    ${menu}
+  </div>
+  <div class="abs" style="left:64px;right:64px;bottom:44px">
+    <div class="info"><b>일시</b>캠퍼스어택 투표 마감 후 공개</div>
+    <div class="info"><b>장소</b>투표 1위 OO대학교 캠퍼스</div>
+    <div class="info"><b>조건</b>우리 학교가 투표 1위를 하면 열립니다!</div>
+  </div>
+</div>`;
+</script></body></html>

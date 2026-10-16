@@ -1,0 +1,27 @@
+@font-face { font-family: 'BHS'; src: url('../../fonts/BlackHanSans.ttf'); }
+@font-face { font-family: 'Jua'; src: url('../../fonts/Jua.ttf'); }
+@font-face { font-family: 'Noto'; font-weight: 400; src: url('../../fonts/NotoKR-400.ttf'); }
+@font-face { font-family: 'Noto'; font-weight: 500; src: url('../../fonts/NotoKR-500.ttf'); }
+@font-face { font-family: 'Noto'; font-weight: 700; src: url('../../fonts/NotoKR-700.ttf'); }
+@font-face { font-family: 'Noto'; font-weight: 900; src: url('../../fonts/NotoKR-900.ttf'); }
+
+:root {
+  --y: #FCCA03;
+  --y2: #FFE066;
+  --y3: #FFF4C2;
+  --k: #111111;
+  --w: #FFFFFF;
+  --red: #E53B2C;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--y); color: var(--k); font-family: 'Noto', sans-serif; }
+body { overflow: hidden; }
+.canvas { position: relative; overflow: hidden; }
+.bhs { font-family: 'BHS', sans-serif; font-weight: 400; letter-spacing: -0.01em; }
+.jua { font-family: 'Jua', sans-serif; }
+.abs { position: absolute; }
+svg { display: block; overflow: visible; }
+.tag {
+  display: inline-block; background: var(--k); color: var(--y);
+  font-family: 'BHS'; padding: 6px 18px 4px; border-radius: 999px;
+}

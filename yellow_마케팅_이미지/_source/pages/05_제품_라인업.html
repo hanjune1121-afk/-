@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/brand.css">
+<script src="../assets/products.js"></script></head>
+<body data-w="1920" data-h="1080"><script>
+const H = { oc: 320, mc: 400, ls: 290, cm: 330 };
+let items = '';
+PRODUCTS.forEach(p => {
+  const h = H[p.key], w = h * p.ratio;
+  items += `<div style="display:flex;flex-direction:column;align-items:center;gap:26px">
+    <div style="height:420px;display:flex;align-items:flex-end">${p.svg({ attrs: `width="${w}"`, card: false })}</div>
+    <div style="text-align:center">
+      <div class="bhs" style="font-size:44px;line-height:1">${p.name}</div>
+      <div style="font-weight:700;font-size:22px;margin:10px 0 16px">${p.spec}</div>
+      <span class="bhs" style="background:var(--k);color:var(--y);font-size:46px;padding:8px 26px 4px;border-radius:14px;display:inline-block">${p.price}원</span>
+    </div></div>`;
+});
+document.body.innerHTML = `<div class="canvas" style="width:1920px;height:1080px">
+  <svg class="abs" width="1920" height="1080" style="left:0;top:0">
+    <rect x="0" y="0" width="1920" height="1080" fill="${Y}"/>
+    <rect x="0" y="670" width="1920" height="410" fill="#FFF4C2"/>
+    <line x1="0" y1="670" x2="1920" y2="670" stroke="${K}" stroke-width="6"/>
+    ${yellowCard(1760, 150, 120, 165, 16, '반칙!', { fs: 32, sw: 7 })}
+  </svg>
+  <img class="abs" src="../assets/logo_mark_k.png" style="left:90px;top:70px;height:70px">
+  <div class="abs bhs" style="left:90px;top:170px;font-size:76px;line-height:1.1">다 아는 중식의 맛,<br><span style="background:var(--k);color:var(--y);padding:0 16px;border-radius:12px">이제 혼자서 편의점 가격으로</span></div>
+  <div class="abs" style="left:60px;right:60px;top:330px;display:flex;justify-content:space-around;align-items:flex-end">${items}</div>
+</div>`;
+</script></body></html>

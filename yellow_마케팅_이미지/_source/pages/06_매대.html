@@ -1,0 +1,89 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/brand.css">
+<script src="../assets/products.js"></script><script src="scene_util.js"></script></head>
+<body data-w="1920" data-h="1080"><script>
+let s = '';
+// wall & floor
+s += `<rect width="1920" height="1080" fill="#FFF6D2"/>`;
+for (let x = 0; x < 1920; x += 80) s += `<line x1="${x}" y1="0" x2="${x}" y2="900" stroke="#F3E6B0" stroke-width="2"/>`;
+s += `<rect x="0" y="900" width="1920" height="180" fill="#E6DCC0"/>`;
+for (let i = -12; i <= 12; i++) s += `<line x1="${960 + i * 90}" y1="900" x2="${960 + i * 260}" y2="1080" stroke="#D4C8A6" stroke-width="2"/>`;
+[940, 1000].forEach(y => s += `<line x1="0" y1="${y}" x2="1920" y2="${y}" stroke="#D4C8A6" stroke-width="2"/>`);
+s += `<line x1="0" y1="900" x2="1920" y2="900" stroke="${K}" stroke-width="5"/>`;
+
+// floor sticker
+s += `<g transform="translate(960,995) scale(1,.42)">
+  <g transform="rotate(-5)"><rect x="-400" y="-130" width="800" height="260" rx="30" fill="${Y}" stroke="${K}" stroke-width="12"/>
+  <text x="0" y="-8" text-anchor="middle" font-family="BHS" font-size="84" fill="${K}">옐로우카드 ZONE</text>
+  <text x="0" y="82" text-anchor="middle" font-family="BHS" font-size="54" fill="${K}">반칙급 중식은 여기!</text></g></g>`;
+
+// ===== header sign
+s += `<rect x="340" y="56" width="1300" height="170" rx="18" fill="${K}"/>
+  ${logo(390, 92, 100, LOGO_Y)}
+  <text x="1600" y="128" text-anchor="end" font-family="BHS" font-size="54" fill="${Y}">이게 편의점에? 반칙이지!</text>
+  <text x="1600" y="190" text-anchor="end" font-family="Noto" font-weight="700" font-size="30" fill="#fff">다 아는 중식의 맛, 혼자서 편의점 가격으로</text>
+  <line x1="420" y1="226" x2="420" y2="244" stroke="${K}" stroke-width="8"/><line x1="1560" y1="226" x2="1560" y2="244" stroke="${K}" stroke-width="8"/>`;
+
+// ===== left gondola (ambient)
+s += `<rect x="340" y="244" width="640" height="656" fill="#FFE680" stroke="${K}" stroke-width="6"/>`;
+for (let y = 270; y < 890; y += 28) for (let x = 366; x < 970; x += 28) s += `<circle cx="${x}" cy="${y}" r="2.6" fill="#E9C640"/>`;
+s += `<rect x="340" y="244" width="640" height="56" fill="${K}"/>
+  <text x="660" y="284" text-anchor="middle" font-family="BHS" font-size="32" fill="${Y}">상온 중식관 · 컵라면 / 볶음면 / 세트</text>`;
+// products on shelves
+[380, 525, 670, 815].forEach(x => s += place('mc', x, 456, 116));
+[372, 572, 772].forEach(x => s += place('cm', x, 656, 180));
+[372, 672].forEach(x => s += place('set', x, 868, 280));
+// shelves
+[[456, '토마토마라컵라면', '1,800원'], [656, '차오멘', '1,800원'], [868, '혼중 기획세트', '14,900원']].forEach(([y, n, p]) => {
+  s += `<rect x="352" y="${y}" width="616" height="16" fill="#555" stroke="${K}" stroke-width="5"/>
+        <rect x="352" y="${y + 16}" width="616" height="30" fill="${Y}" stroke="${K}" stroke-width="5"/>`;
+  s += priceLabel(392, y + 10, n, p, 230);
+});
+s += `<rect x="340" y="244" width="22" height="656" fill="${K}"/><rect x="958" y="244" width="22" height="656" fill="${K}"/>`;
+s += yellowCard(975, 500, 72, 100, 18, '반칙!', { fs: 21, sw: 5 });
+s += yellowCard(356, 700, 72, 100, -16, '반칙!', { fs: 21, sw: 5, lines: false });
+
+// ===== right fridge / freezer
+s += `<rect x="1020" y="244" width="620" height="656" rx="20" fill="${Y}" stroke="${K}" stroke-width="8"/>
+  <rect x="1020" y="244" width="620" height="56" rx="18" fill="${K}"/>
+  <text x="1330" y="284" text-anchor="middle" font-family="BHS" font-size="32" fill="${Y}">냉장 · 냉동 중식관</text>`;
+// fridge glass
+s += `<rect x="1050" y="320" width="560" height="320" rx="10" fill="#D5ECF5" stroke="${K}" stroke-width="6"/>`;
+[1070, 1244, 1418].forEach(x => s += place('oc', x, 466, 160));
+[1070, 1244, 1418].forEach(x => s += place('oc', x, 636, 160));
+s += `<rect x="1056" y="466" width="548" height="10" fill="#9BB9C6"/>`;
+s += `<path d="M1090,330 L1150,330 L1060,520 L1056,470 Z M1200,330 L1230,330 L1110,630 L1080,630 Z" fill="#fff" opacity=".45"/>`;
+s += `<rect x="1586" y="380" width="12" height="190" rx="6" fill="${K}"/>`;
+s += `<g transform="translate(1070,340)"><rect width="92" height="40" rx="20" fill="#fff" stroke="${K}" stroke-width="4"/><text x="46" y="28" text-anchor="middle" font-family="BHS" font-size="24" fill="${K}">냉장</text></g>`;
+s += priceLabel(1374, 477, '오렌지치킨', '4,800원', 220, 34);
+// freezer
+s += `<rect x="1050" y="660" width="560" height="220" rx="10" fill="#E3F2F8" stroke="${K}" stroke-width="6"/>`;
+[1062, 1244, 1426].forEach(x => s += place('ls', x, 868, 176));
+s += `<path d="M1100,668 L1160,668 L1080,860 L1056,860 Z M1260,668 L1290,668 L1200,860 L1170,860 Z" fill="#fff" opacity=".5"/>`;
+s += `<g transform="translate(1070,676)"><rect width="92" height="40" rx="20" fill="#fff" stroke="${K}" stroke-width="4"/><text x="46" y="28" text-anchor="middle" font-family="BHS" font-size="24" fill="${K}">냉동</text></g>`;
+s += priceLabel(1380, 676, '냉동양념양꼬치', '8,900원', 220);
+s += yellowCard(1640, 420, 80, 110, 16, '반칙!', { fs: 23, sw: 5 });
+
+// ===== left X-banner
+s += `<line x1="185" y1="140" x2="185" y2="940" stroke="${K}" stroke-width="8"/>
+  <line x1="185" y1="900" x2="110" y2="960" stroke="${K}" stroke-width="8" stroke-linecap="round"/><line x1="185" y1="900" x2="260" y2="960" stroke="${K}" stroke-width="8" stroke-linecap="round"/>
+  <rect x="70" y="150" width="230" height="720" rx="10" fill="${Y}" stroke="${K}" stroke-width="7"/>
+  ${logo(92, 178, 56)}
+  <text x="185" y="300" text-anchor="middle" font-family="BHS" font-size="44" fill="${K}">이게</text>
+  <text x="185" y="352" text-anchor="middle" font-family="BHS" font-size="44" fill="${K}">편의점에?</text>
+  <rect x="88" y="378" width="194" height="138" rx="12" fill="${K}"/>
+  <text x="185" y="440" text-anchor="middle" font-family="BHS" font-size="58" fill="${Y}">반칙</text>
+  <text x="185" y="500" text-anchor="middle" font-family="BHS" font-size="58" fill="${Y}">이지!</text>
+  ${place('mc', 128, 760, 116)}
+  ${yellowCard(250, 560, 54, 76, 16, '', { sw: 4 })}
+  <text x="185" y="820" text-anchor="middle" font-family="Noto" font-weight="900" font-size="22" fill="${K}">중식 4종 NEW</text>`;
+// right wobbler: QR to 바로배달
+s += `<g transform="translate(1700,560)"><rect width="170" height="230" rx="14" fill="#fff" stroke="${K}" stroke-width="6"/>
+  <text x="85" y="44" text-anchor="middle" font-family="BHS" font-size="28" fill="${K}">바로배달</text>
+  <rect x="35" y="62" width="100" height="100" fill="#fff" stroke="${K}" stroke-width="4"/>`;
+const qr = rng(77); for (let i = 0; i < 10; i++) for (let j = 0; j < 10; j++) if (qr() > 0.5 || (i < 3 && j < 3) || (i > 6 && j < 3) || (i < 3 && j > 6)) s += `<rect x="${40 + i * 9}" y="${67 + j * 9}" width="9" height="9" fill="${K}"/>`;
+s += `<text x="85" y="196" text-anchor="middle" font-family="Noto" font-weight="700" font-size="17" fill="${K}">앱으로 주문하면</text>
+  <text x="85" y="218" text-anchor="middle" font-family="Noto" font-weight="700" font-size="17" fill="${K}">문 앞까지</text></g>
+  <rect x="1772" y="790" width="26" height="110" fill="${K}"/><rect x="1730" y="890" width="110" height="14" rx="7" fill="${K}"/>`;
+
+document.body.innerHTML = `<svg width="1920" height="1080" viewBox="0 0 1920 1080">${s}</svg>`;
+</script></body></html>
