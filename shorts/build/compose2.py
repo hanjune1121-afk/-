@@ -211,7 +211,7 @@ for s in segs: S.append(S[-1] + s["dur"])
 END0 = S[-1]; END_DUR = 3.5; TOTAL = END0 + END_DUR
 
 ovs = [
-    cute_ov(["이마트24 X 재혼황후 콜라보", "신상 받아봤어요💗"], S[0], S[2], cy=900),
+    cute_ov(["이마트24 X 재혼황후 콜라보", "신상이 나왔어요💗"], S[0], S[2], cy=900),
     Ov(narration(["박스 옆면에 [명대사]까지 있더라고요", "디테일 미쳤다 진짜.."], PALE_Y), S[2], S[3], cy=560),
     Ov(narration(["첫 번째는 [아몬드] 빼빼로예요"]), S[3], S[4], cy=1240),
     Ov(narration(["[“내가 최애 빼빼로야?”]", "봉지가 말을 걸어요ㅋㅋㅋ"]), S[4], S[5], cy=420),
