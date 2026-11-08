@@ -10,8 +10,8 @@ EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 
 WHITE = (255, 255, 255)
 INK = (34, 28, 30)
-PALE_Y = (255, 243, 150)      # ref1 / ref4 pale yellow
-MINT = (128, 244, 222)        # ref3 keyword mint
+PALE_Y = (255, 150, 40)       # accent: orange (QWER mission)
+MINT = (255, 150, 40)         # accent: orange
 HOTPINK = (255, 92, 170)      # ref2 keyword pink
 LABEL_Y = (247, 243, 178)     # ref2 "잠시 캡처" label
 
@@ -232,17 +232,87 @@ def build_endcard_bg():
                         "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True, check=True)
     return Image.frombuffer("RGB", (W, H), r.stdout).copy()
 
-end_bg = build_endcard_bg()
-lab = capture_label()
-box1 = info_box(["①행사카드로 샌드위치 구매 시", "[핫아메리카노 or 레쓰비 0원]"])
-box2 = info_box(["②기간 [11/1 ~ 11/30]", "농협·현대·우리카드", "카카오페이 머니&포인트 · 토스페이 머니&계좌"])
-tags = stack([text_line([("#이마트24 #편슐랭스타 #대학생서포터즈", WHITE)], 46, "cond", stroke=4, shadow=6),
-              text_line([("#QWER #올데이케어", PALE_Y)], 46, "cond", stroke=4, shadow=6)], gap=2)
-y = 560
-end_ovs = []
-for img, delay, anim in ((lab, 0.0, "pop"), (box1, 0.25, "fade"), (box2, 0.5, "fade"), (tags, 0.8, "fade")):
-    end_ovs.append(Ov(img, END0 + delay, TOTAL + 1, cy=y + img.height // 2, anim=anim))
-    y += img.height + (34 if img is lab else 26)
+GREY = (95, 92, 98)
+LGREY = (140, 136, 142)
+
+def ticket():
+    tw = 900
+    top = stack([
+        text_line([("☕ 행사카드 혜택", WHITE)], 40, "cond"),
+    ], gap=0)
+    pill_px, pill_py = 26, 10
+    pill = Image.new("RGBA", (top.width + 2 * pill_px, top.height + 2 * pill_py), (0, 0, 0, 0))
+    ImageDraw.Draw(pill).rounded_rectangle([0, 0, pill.width - 1, pill.height - 1], pill.height // 2, fill=PALE_Y + (255,))
+    pill.alpha_composite(top, (pill_px, pill_py))
+    l1 = text_line([("샌드위치 사면", INK)], 76, "cond")
+    l2 = text_line([("커피가 ", INK), ("0원", PALE_Y), ("!", INK)], 124, "cond")
+    upper = stack([pill, l1, l2], gap=10)
+    b1 = text_line([("핫아메리카노 or 레쓰비", GREY)], 52, "cond")
+    b2 = text_line([("기간 ", GREY), ("11/1 ~ 11/30", PALE_Y)], 52, "cond")
+    b3 = text_line([("농협·현대·우리카드 / 카카오페이 / 토스페이", LGREY)], 36, "cond", max_w=820)
+    b4 = text_line([("(카카오페이 머니&포인트 · 토스페이 머니&계좌)", LGREY)], 30, "cond", max_w=820)
+    lower = stack([b1, b2, b3, b4], gap=8)
+    pad_t, pad_m, pad_b = 40, 34, 36
+    cut = pad_t + upper.height + pad_m
+    th = cut + pad_m + lower.height + pad_b
+    m = 40
+    im = Image.new("RGBA", (tw + 2 * m, th + 2 * m), (0, 0, 0, 0))
+    sh = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rounded_rectangle([m, m + 14, m + tw, m + th + 14], 36, fill=(0, 0, 0, 150))
+    im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(16)))
+    body = Image.new("RGBA", (tw, th), (0, 0, 0, 0))
+    d = ImageDraw.Draw(body)
+    d.rounded_rectangle([0, 0, tw - 1, th - 1], 36, fill=(255, 252, 246, 255))
+    d.rounded_rectangle([0, 0, tw - 1, 22], 12, fill=PALE_Y + (255,))
+    d.rectangle([0, 12, tw - 1, 22], fill=(255, 252, 246, 255))
+    # side notches + dashed tear line
+    r = 30
+    mask = body.getchannel("A")
+    md = ImageDraw.Draw(mask)
+    md.ellipse([-r, cut - r, r, cut + r], fill=0); md.ellipse([tw - r, cut - r, tw + r, cut + r], fill=0)
+    body.putalpha(mask)
+    for x in range(r + 20, tw - r - 20, 34):
+        d.line([x, cut, x + 18, cut], fill=(205, 198, 190, 255), width=5)
+    body.alpha_composite(upper, ((tw - upper.width) // 2, pad_t))
+    body.alpha_composite(lower, ((tw - lower.width) // 2, cut + pad_m))
+    im.alpha_composite(body, (m, m))
+    return im, cut + m
+
+def stamp():
+    s = 230
+    im = Image.new("RGBA", (s, s), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    d.ellipse([8, 8, s - 8, s - 8], outline=PALE_Y + (255,), width=9)
+    d.ellipse([26, 26, s - 26, s - 26], outline=PALE_Y + (255,), width=3)
+    t1 = text_line([("COFFEE", PALE_Y)], 34, "sans")
+    t2 = text_line([("FREE", PALE_Y)], 70, "sans")
+    t = stack([t1, t2], gap=0)
+    im.alpha_composite(t, ((s - t.width) // 2, (s - t.height) // 2))
+    im = im.rotate(-14, resample=Image.BICUBIC, expand=True)
+    a = im.getchannel("A").point(lambda v: int(v * 0.92)); im.putalpha(a)
+    return im
+
+def build_endcard_bg2():
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", "1.0", "-i", segs[12]["file"], "-frames:v", "1",
+                        "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True, check=True)
+    return Image.frombuffer("RGB", (W, H), r.stdout).copy()
+
+end_bg = build_endcard_bg2()
+head = cute(["이 혜택 놓치면 손해예요💗"])
+tk, _ = ticket()
+st = stamp()
+tags = stack([text_line([("#이마트24 #편슐랭스타 #대학생서포터즈", WHITE)], 48, "cond", stroke=4, shadow=6),
+              text_line([("#QWER #올데이케어", PALE_Y)], 48, "cond", stroke=4, shadow=6)], gap=2)
+y_head = 470
+y_tk = y_head + head.height // 2 + 40 + tk.height // 2
+y_tags = y_tk + tk.height // 2 + 10 + tags.height // 2
+end_ovs = [
+    Ov(head, END0, TOTAL + 1, cy=y_head, anim="pop",
+       stars=[(-head.width / 2 - 30, -10, 28, 0), (head.width / 2 + 28, -30, 24, 1), (head.width / 2 - 60, 50, 18, 2)]),
+    Ov(tk, END0 + 0.2, TOTAL + 1, cy=y_tk, anim="pop"),
+    Ov(st, END0 + 0.75, TOTAL + 1, cx=W // 2 + 330, cy=y_tk - tk.height // 2 + 70, anim="pop"),
+    Ov(tags, END0 + 0.6, TOTAL + 1, cy=y_tags, anim="fade"),
+]
 
 def endcard_frame(lt):
     z = 1.0 + 0.04 * (lt / END_DUR)
