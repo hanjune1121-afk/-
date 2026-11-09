@@ -1,0 +1,14 @@
+,LS_mean,ELEV_MEAN,GEOM_AREA_M2,ELONGATION,COMPACTNESS,STREAM_PARCEL_M,R_2025_RANK1,RAIN_PRIMARY_obs_max_60min_mm,RAIN_PRIMARY_estimated_top5_EI30_share,R_summer_JunSep_share,RAIN_PRIMARY_obs_max_calendar_day_mm,TC_canopy_EI30_weighted_pct_partial,TC_low_canopy_EI30_fraction_annual_known_only
+LS_mean,1.0,0.2,0.05,0.02,-0.05,0.06,-0.15,-0.11,-0.03,-0.17,-0.04,-0.13,0.1
+ELEV_MEAN,0.2,1.0,0.27,0.03,-0.07,-0.07,0.07,0.27,-0.08,0.03,-0.21,0.12,-0.18
+GEOM_AREA_M2,0.05,0.27,1.0,-0.03,-0.18,-0.24,0.01,0.06,0.01,-0.0,-0.04,0.02,-0.06
+ELONGATION,0.02,0.03,-0.03,1.0,-0.65,-0.06,0.01,0.01,-0.01,0.01,0.0,0.0,-0.01
+COMPACTNESS,-0.05,-0.07,-0.18,-0.65,1.0,0.11,0.04,0.0,0.0,0.02,0.04,0.06,-0.04
+STREAM_PARCEL_M,0.06,-0.07,-0.24,-0.06,0.11,1.0,-0.09,-0.02,0.13,-0.1,0.0,-0.02,-0.05
+R_2025_RANK1,-0.15,0.07,0.01,0.01,0.04,-0.09,1.0,0.48,-0.44,0.66,0.45,0.82,-0.41
+RAIN_PRIMARY_obs_max_60min_mm,-0.11,0.27,0.06,0.01,0.0,-0.02,0.48,1.0,0.18,0.35,-0.1,0.42,-0.27
+RAIN_PRIMARY_estimated_top5_EI30_share,-0.03,-0.08,0.01,-0.01,0.0,0.13,-0.44,0.18,1.0,-0.57,0.15,-0.26,-0.16
+R_summer_JunSep_share,-0.17,0.03,-0.0,0.01,0.02,-0.1,0.66,0.35,-0.57,1.0,-0.15,0.3,0.09
+RAIN_PRIMARY_obs_max_calendar_day_mm,-0.04,-0.21,-0.04,0.0,0.04,0.0,0.45,-0.1,0.15,-0.15,1.0,0.37,-0.28
+TC_canopy_EI30_weighted_pct_partial,-0.13,0.12,0.02,0.0,0.06,-0.02,0.82,0.42,-0.26,0.3,0.37,1.0,-0.77
+TC_low_canopy_EI30_fraction_annual_known_only,0.1,-0.18,-0.06,-0.01,-0.04,-0.05,-0.41,-0.27,-0.16,0.09,-0.28,-0.77,1.0
