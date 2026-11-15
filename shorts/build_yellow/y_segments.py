@@ -27,7 +27,7 @@ SEGS = [
 ]
 
 TONEMAP = ("zscale=tin=arib-std-b67:t=arib-std-b67:pin=bt2020:p=bt709:min=bt2020nc:m=bt709:rin=tv:r=tv,"
-           "format=yuv420p,eq=contrast=1.12:saturation=1.15:brightness=0.01")
+           "format=yuv420p")  # colour-space conversion only, no look/filter
 
 def atempo(s):
     parts = []

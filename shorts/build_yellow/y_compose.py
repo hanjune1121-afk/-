@@ -17,12 +17,13 @@ LABEL_Y = (247, 243, 178)     # ref2 "잠시 캡처" label
 
 FONT_FILES = {
     "pixel": "Galmuri11-Bold.ttf",
+    "jua": "Jua-Regular.ttf",
     "hand": "GamjaFlower-Regular.ttf",
     "hand2": "GamjaFlower-Regular.ttf",
     "cond": "DoHyeon-Regular.ttf",
     "sans": "Pretendard-Bold.otf",
 }
-FALLBACK = {"pixel": "sans", "hand": "hand2", "cond": "sans", "hand2": "sans"}
+FALLBACK = {"jua": "sans", "pixel": "sans", "hand": "hand2", "cond": "sans", "hand2": "sans"}
 
 _fc = {}
 def font(name, size):
@@ -127,7 +128,7 @@ def narration(lines, color=MINT, size=78):
 
 def cute(lines, size=66):
     """ref1: pixel-handwriting pale yellow with dark outline."""
-    return stack([text_line([(l, PALE_Y)], size, "pixel", stroke=6, shadow=0) for l in lines], gap=10)
+    return stack([text_line([(l, PALE_Y)], size + 6, "jua", stroke=6, shadow=6) for l in lines], gap=6)
 
 def bignum(num, sub):
     """ref4: big pale-yellow number + white line under it."""
