@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+<rect id="배경" width="1920" height="1080" fill="#FFFFFF"/>
+<g id="헤더">
+<rect id="섹션_마커" x="84" y="63" width="18" height="18" fill="#FF3700"/>
+<text fill="#46494D" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="30" font-weight="500" letter-spacing="-0.03em" id="섹션명"><tspan x="114" y="83">현황분석</tspan></text>
+<text fill="#6B6E72" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="36" font-weight="400" letter-spacing="-0.04em" id="연결문장"><tspan x="825.8" y="110">왜 떠오르지 않을까?</tspan></text>
+<g id="헤드문장"><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="78" font-weight="800" letter-spacing="-0.045em"><tspan x="555.68" y="197">어디에나 붙어 </tspan></text><text fill="#FF3700" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="78" font-weight="800" letter-spacing="-0.045em"><tspan x="966.96" y="197">흐려진 슬로건</tspan></text></g>
+</g><g id="슬로건"><g filter="url(#filter5_d)"><rect id="슬로건_박스" x="610" y="248" width="700" height="116" rx="24" fill="#53565A"/></g><g id="슬로건_이름"><text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="46" font-weight="800" letter-spacing="-0.03em"><tspan x="802.03" y="304">올데이 </tspan></text><text fill="#FF6A3D" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="46" font-weight="800" letter-spacing="-0.03em"><tspan x="926.08" y="304">하이라이트</tspan></text></g><text fill="#D9DADC" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="22" font-weight="500" letter-spacing="-0.02em" id="슬로건_뜻"><tspan x="757.2" y="341">‘하루 모든 순간에 하이라이트를 찍어주겠다’는 뜻</tspan></text><text fill="#A9ABAE" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="17" font-weight="400" letter-spacing="-0.01em" id="슬로건_출처"><tspan x="1326" y="360">출처 | 비즈워치, 2025.12.08</tspan></text></g><g id="연결선"><path d="M960 364V408M303 408H1617" stroke="#53565A" stroke-width="3"/><path d="M303 408V440" stroke="#53565A" stroke-width="3"/><circle cx="303" cy="446" r="9" fill="#53565A"/><path d="M741 408V440" stroke="#53565A" stroke-width="3"/><circle cx="741" cy="446" r="9" fill="#53565A"/><path d="M1179 408V440" stroke="#53565A" stroke-width="3"/><circle cx="1179" cy="446" r="9" fill="#53565A"/><path d="M1617 408V440" stroke="#53565A" stroke-width="3"/><circle cx="1617" cy="446" r="9" fill="#53565A"/></g><g id="사용처_할인행사"><g id="사용처_할인행사_배경" filter="url(#filter6_d)"><rect x="96" y="470" width="414" height="322" rx="36" fill="#FFF7F4" stroke="#FF3700" stroke-width="2"/></g><g id="분류_할인행사"><rect x="243.33" y="498" width="120.61" height="44" rx="22" fill="#FF3700"/>
+<text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="700" letter-spacing="-0.02em" id="분류_할인행사_텍스트"><tspan x="265.33" y="527.56">할인 행사</tspan></text></g><text fill="#8A8D91" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="500" letter-spacing="-0.02em" id="설명_1"><tspan x="194.41" y="596">창립 12주년 고객 감사 행사</tspan></text><g id="이름_1"><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="162.56" y="654">‘이츠 </tspan></text><rect x="228.94" y="640.4" width="148.13" height="16.32" fill="#FFE2D7"/><text fill="#FF3700" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="232.94" y="654">하이라이트</tspan></text><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="373.06" y="654"> 타임’</tspan></text></g><path d="M132 706H474" stroke="#E6CFC6" stroke-width="1.5" stroke-dasharray="4 5"/><text fill="#A9ABAE" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18" font-weight="400" letter-spacing="-0.01em" id="출처_1"><tspan x="199.49" y="750">출처 | 한국경제, 2026.02.04</tspan></text></g><g id="사용처_신상품행사"><g id="사용처_신상품행사_배경" filter="url(#filter7_d)"><rect x="534" y="470" width="414" height="322" rx="36" fill="#FFF7F4" stroke="#FF3700" stroke-width="2"/></g><g id="분류_신상품행사"><rect x="672.46" y="498" width="138.34" height="44" rx="22" fill="#FF3700"/>
+<text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="700" letter-spacing="-0.02em" id="분류_신상품행사_텍스트"><tspan x="694.46" y="527.56">신상품 행사</tspan></text></g><text fill="#8A8D91" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="500" letter-spacing="-0.02em" id="설명_2"><tspan x="627.56" y="596">매달 진행하는 신상품 이벤트</tspan></text><g id="이름_2"><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="600.57" y="654">월간 ‘신상 </tspan></text><rect x="729.23" y="640.4" width="148.13" height="16.32" fill="#FFE2D7"/><text fill="#FF3700" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="733.23" y="654">하이라이트</tspan></text><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="873.35" y="654">’</tspan></text></g><path d="M570 706H912" stroke="#E6CFC6" stroke-width="1.5" stroke-dasharray="4 5"/><text fill="#A9ABAE" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18" font-weight="400" letter-spacing="-0.01em" id="출처_2"><tspan x="624.73" y="750">출처 | 펴늬 행사 게시판, 2026.10</tspan></text></g><g id="사용처_특화점포"><g id="사용처_특화점포_배경" filter="url(#filter8_d)"><rect x="972" y="470" width="414" height="322" rx="36" fill="#FFF7F4" stroke="#FF3700" stroke-width="2"/></g><g id="분류_특화점포"><rect x="1119.33" y="498" width="119.61" height="44" rx="22" fill="#FF3700"/>
+<text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="700" letter-spacing="-0.02em" id="분류_특화점포_텍스트"><tspan x="1141.33" y="527.56">특화 점포</tspan></text></g><text fill="#8A8D91" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="500" letter-spacing="-0.02em" id="설명_3"><tspan x="1086.11" y="596">신설동 매장 (2026.10)</tspan></text><g id="이름_3"><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="1086.84" y="654">‘</tspan></text><rect x="1090.92" y="640.4" width="92.08" height="16.32" fill="#FFE2D7"/><text fill="#FF3700" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="1094.92" y="654">올데이</tspan></text><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="1179" y="654">’케어랩</tspan></text></g><path d="M1008 706H1350" stroke="#E6CFC6" stroke-width="1.5" stroke-dasharray="4 5"/><text fill="#A9ABAE" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18" font-weight="400" letter-spacing="-0.01em" id="출처_3"><tspan x="1079.63" y="750">출처 | 토요경제, 2026.10.16</tspan></text></g><g id="사용처_앱"><g id="사용처_앱_배경" filter="url(#filter9_d)"><rect x="1410" y="470" width="414" height="322" rx="36" fill="#FFF7F4" stroke="#FF3700" stroke-width="2"/></g><g id="분류_앱"><rect x="1586.13" y="498" width="61.73" height="44" rx="22" fill="#FF3700"/>
+<text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="700" letter-spacing="-0.02em" id="분류_앱_텍스트"><tspan x="1608.13" y="527.56">앱</tspan></text></g><text fill="#8A8D91" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21" font-weight="500" letter-spacing="-0.02em" id="설명_4"><tspan x="1526.69" y="596">이마트24 앱 소개 문구</tspan></text><g id="이름_4"><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="1454.95" y="654">“모든 순간이 </tspan></text><rect x="1619.24" y="640.4" width="148.13" height="16.32" fill="#FFE2D7"/><text fill="#FF3700" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="1623.24" y="654">하이라이트</tspan></text><text fill="#53565A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="34" font-weight="800" letter-spacing="-0.04em"><tspan x="1763.37" y="654">”</tspan></text></g><path d="M1446 706H1788" stroke="#E6CFC6" stroke-width="1.5" stroke-dasharray="4 5"/><text fill="#A9ABAE" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18" font-weight="400" letter-spacing="-0.01em" id="출처_4"><tspan x="1563.87" y="750">출처 | 앱스토어</tspan></text></g><path id="하단_돔" d="M0 1080V1012Q960 736 1920 1012V1080Z" fill="url(#dome5)"/><text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Nanum Pen Script" font-size="78" font-weight="400" letter-spacing="0em" id="하단요약"><tspan x="431.82" y="1022">모든 순간이 하이라이트면, 기억에 남는 순간은 없다</tspan></text>
+<defs>
+<filter id="filter5_d" x="586" y="230" width="748" height="164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.2 0 0 0 0 0.15 0 0 0 0.16 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter6_d" x="72" y="452" width="462" height="370" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.2 0 0 0 0 0.15 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter7_d" x="510" y="452" width="462" height="370" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.2 0 0 0 0 0.15 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter8_d" x="948" y="452" width="462" height="370" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.2 0 0 0 0 0.15 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter9_d" x="1386" y="452" width="462" height="370" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.2 0 0 0 0 0.15 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="dome5" x1="960" y1="860" x2="960" y2="1080" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3700"/><stop offset="1" stop-color="#FF8A66"/></linearGradient>
+</defs>
+</svg>
