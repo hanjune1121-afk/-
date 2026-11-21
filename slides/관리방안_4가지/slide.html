@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>맞춤 관리 후보</title>
+<style>
+  :root {
+    --bg: #f1f1f1;
+    --card: #b7d9a3;
+    --deep: #23392b;      /* badge, labels */
+    --ink: #111111;
+    --ink-2: #2f3a31;
+    --ink-3: #5d6b60;
+    --box: #fbfbf8;
+    --chip: #f4f9ef;
+    --line: rgba(35,57,43,.22);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden; position: relative;
+    font-family: "Pretendard", system-ui, sans-serif; color: var(--ink);
+    -webkit-font-smoothing: antialiased; word-break: keep-all;
+  }
+  .head { position: absolute; top: 62px; left: 0; right: 0; text-align: center; }
+  .kicker { font-size: 26px; font-weight: 600; color: #7f9584; letter-spacing: -0.2px; }
+  .title  { margin-top: 10px; font-size: 54px; font-weight: 800; letter-spacing: -1.4px; }
+
+  .cards { position: absolute; left: 64px; right: 64px; top: 236px; bottom: 56px;
+           display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .card { background: var(--card); border-radius: 24px; padding: 28px 28px 30px;
+          display: grid; grid-template-rows: auto 56px 204px 128px 34px auto 1fr; }
+
+  .badge { justify-self: start; display: flex; align-items: center; gap: 10px;
+           background: var(--deep); color: #fff; border-radius: 999px;
+           padding: 6px 7px 6px 18px; font-size: 20px; font-weight: 700; letter-spacing: -0.2px; }
+  .badge i { font-style: normal; width: 30px; height: 30px; border-radius: 50%; background: #fff; color: var(--deep);
+             display: grid; place-items: center; font-size: 18px; font-weight: 800; }
+  .state { margin-top: 14px; font-size: 35px; font-weight: 800; letter-spacing: -1px; white-space: nowrap; }
+
+  .pic { margin-top: 8px; height: 186px; background: var(--box); border-radius: 16px; overflow: hidden;
+         box-shadow: inset 0 0 0 1.5px rgba(35,57,43,.18); }
+  .pic svg { display: block; width: 100%; height: 100%; }
+
+  .lbl { font-size: 18px; font-weight: 800; color: var(--deep); letter-spacing: 0.2px; }
+  .check { padding-top: 6px; }
+  .chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { background: var(--chip); border-radius: 10px; padding: 7px 13px; font-size: 21px; font-weight: 600;
+          color: var(--ink-2); letter-spacing: -0.3px; box-shadow: 0 1px 0 rgba(35,57,43,.10); }
+
+  .arrow { display: flex; align-items: center; gap: 10px; color: var(--deep); }
+  .arrow::before, .arrow::after { content: ""; flex: 1; height: 2px; background: var(--line); }
+  .arrow svg { width: 22px; height: 22px; flex: none; }
+
+  .plan { padding-top: 6px; }
+  .measure { margin-top: 6px; font-size: 40px; font-weight: 800; letter-spacing: -1.2px; line-height: 1.15; }
+
+  .desc { margin-top: 16px; padding-top: 16px; border-top: 2px solid var(--line);
+          display: flex; flex-direction: column; gap: 10px; }
+  .def { font-size: 21px; font-weight: 500; color: var(--ink-2); line-height: 1.45; letter-spacing: -0.3px; }
+  .def b { display: block; font-weight: 800; color: var(--ink); font-size: 21px; margin-bottom: 2px; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div class="kicker">맞춤 관리 후보</div>
+    <div class="title">밭 상태에 따라 4가지 관리 방안을 제안합니다</div>
+  </div>
+
+  <div class="cards">
+
+    <!-- ① 맨흙 노출 -->
+    <div class="card">
+      <div class="badge">현재 상태<i>1</i></div>
+      <div class="state">맨흙이 노출된 밭</div>
+      <div class="pic">
+        <svg viewBox="0 -13 370 186" preserveAspectRatio="xMidYMid slice">
+          <g fill="#6fb3e8">
+            <path d="M70 22 q5 10 0 14 q-5 -4 0 -14z"/><path d="M150 38 q5 10 0 14 q-5 -4 0 -14z"/>
+            <path d="M230 18 q5 10 0 14 q-5 -4 0 -14z"/><path d="M305 40 q5 10 0 14 q-5 -4 0 -14z"/>
+          </g>
+          <rect x="0" y="104" width="370" height="70" fill="#a8774e"/>
+          <g fill="#8e6140"><circle cx="40" cy="128" r="3"/><circle cx="110" cy="142" r="2.5"/><circle cx="175" cy="124" r="3"/>
+            <circle cx="250" cy="146" r="2.5"/><circle cx="320" cy="130" r="3"/><circle cx="80" cy="150" r="2"/><circle cx="290" cy="152" r="2"/></g>
+          <!-- straw / residue layer -->
+          <g stroke-linecap="round" stroke-width="5">
+            <path d="M8 104 l22 -12 M30 104 l26 -9 M58 104 l20 -13 M84 104 l26 -8 M112 104 l20 -12 M138 104 l26 -10 M166 104 l20 -12 M192 104 l26 -9 M220 104 l20 -13 M246 104 l26 -8 M274 104 l20 -12 M300 104 l26 -10 M328 104 l20 -12 M350 104 l18 -9" stroke="#e0b45c"/>
+            <path d="M20 102 l26 4 M72 100 l24 5 M126 101 l26 3 M182 100 l24 5 M236 101 l26 3 M290 100 l24 5 M340 101 l22 3" stroke="#c9963a"/>
+          </g>
+        </svg>
+      </div>
+      <div class="check">
+        <div class="lbl">확인할 조건</div>
+        <div class="chips"><span class="chip">피복재 적합성</span></div>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 22 22"><path d="M11 3v14M4 11l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="plan">
+        <div class="lbl">관리 방안</div>
+        <div class="measure">잔재 피복 · 멀칭</div>
+      </div>
+      <div class="desc">
+        <div class="def"><b>잔재 피복</b>수확 후 남은 줄기·잎을 밭에 남겨 흙을 덮어 둠</div>
+        <div class="def"><b>멀칭</b>짚·비닐 등으로 흙 표면을 덮음</div>
+      </div>
+    </div>
+
+    <!-- ② 수확 후 빈 기간 -->
+    <div class="card">
+      <div class="badge">현재 상태<i>2</i></div>
+      <div class="state">수확 후 빈 기간</div>
+      <div class="pic">
+        <svg viewBox="0 -13 370 186" preserveAspectRatio="xMidYMid slice">
+          <rect x="0" y="112" width="370" height="62" fill="#a8774e"/>
+          <g fill="#8e6140"><circle cx="40" cy="134" r="3"/><circle cx="120" cy="148" r="2.5"/><circle cx="200" cy="130" r="3"/>
+            <circle cx="270" cy="150" r="2.5"/><circle cx="335" cy="136" r="3"/></g>
+          <defs><g id="sprout">
+            <path d="M0 112 v-34" stroke="#3f8a35" stroke-width="4" stroke-linecap="round"/>
+            <path d="M0 86 c-6 -16 -24 -18 -30 -10 c8 10 22 14 30 10z" fill="#5fae4a"/>
+            <path d="M0 80 c6 -18 26 -22 32 -12 c-8 12 -24 16 -32 12z" fill="#4c9b3c"/>
+          </g></defs>
+          <use href="#sprout" x="48"/><use href="#sprout" x="116"/><use href="#sprout" x="184"/>
+          <use href="#sprout" x="252"/><use href="#sprout" x="320"/>
+        </svg>
+      </div>
+      <div class="check">
+        <div class="lbl">확인할 조건</div>
+        <div class="chips"><span class="chip">지역</span><span class="chip">다음 재배 가능성</span></div>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 22 22"><path d="M11 3v14M4 11l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="plan">
+        <div class="lbl">관리 방안</div>
+        <div class="measure">피복작물 재배</div>
+      </div>
+      <div class="desc">
+        <div class="def"><b>피복작물</b>다음 작물을 심기 전까지 빈 땅을 덮도록 심는 작물</div>
+      </div>
+    </div>
+
+    <!-- ③ 넓고 얕은 물흐름 -->
+    <div class="card">
+      <div class="badge">현재 상태<i>3</i></div>
+      <div class="state">넓고 얕은 물흐름</div>
+      <div class="pic">
+        <svg viewBox="0 -13 370 186" preserveAspectRatio="xMidYMid slice">
+          <rect y="-13" width="370" height="186" fill="#ead6b4"/>
+          <g stroke="#d7bb8e" stroke-width="3"><path d="M0 -5h250M0 20h250M0 50h250M0 80h250M0 110h250M0 140h250M0 166h250"/></g>
+          <!-- buffer strip -->
+          <rect x="250" y="-13" width="120" height="186" fill="#73b153"/>
+          <g fill="none" stroke="#4f923a" stroke-width="3" stroke-linecap="round">
+            <path d="M266 22 l5 -9 l5 9 M300 30 l5 -9 l5 9 M336 18 l5 -9 l5 9 M276 60 l5 -9 l5 9 M318 66 l5 -9 l5 9 M352 56 l5 -9 l5 9
+                     M264 100 l5 -9 l5 9 M300 108 l5 -9 l5 9 M338 96 l5 -9 l5 9 M280 142 l5 -9 l5 9 M320 148 l5 -9 l5 9 M354 136 l5 -9 l5 9"/>
+          </g>
+          <!-- wide shallow sheet flow -->
+          <g fill="none" stroke="#4a9fe0" stroke-width="5" stroke-linecap="round" opacity=".9">
+            <path d="M22 36 q40 -10 80 0 t80 0 t66 0"/>
+            <path d="M22 80 q40 -10 80 0 t80 0 t66 0"/>
+            <path d="M22 124 q40 -10 80 0 t80 0 t66 0"/>
+          </g>
+          <g fill="#4a9fe0"><path d="M250 26 l14 10 l-14 10z"/><path d="M250 70 l14 10 l-14 10z"/><path d="M250 114 l14 10 l-14 10z"/></g>
+        </svg>
+      </div>
+      <div class="check">
+        <div class="lbl">확인할 조건</div>
+        <div class="chips"><span class="chip">공간</span><span class="chip">동선</span><span class="chip">배출구 안정성</span><span class="chip">물 고임 여부</span></div>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 22 22"><path d="M11 3v14M4 11l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="plan">
+        <div class="lbl">관리 방안</div>
+        <div class="measure">완충식생대</div>
+      </div>
+      <div class="desc">
+        <div class="def"><b>완충식생대</b>밭 가장자리에 풀을 심은 띠. 흘러나가는 물의 속도를 줄이고 흙을 걸러 줌</div>
+      </div>
+    </div>
+
+    <!-- ④ 집중된 물길 -->
+    <div class="card">
+      <div class="badge">현재 상태<i>4</i></div>
+      <div class="state">집중된 물길</div>
+      <div class="pic">
+        <svg viewBox="0 -13 370 186" preserveAspectRatio="xMidYMid slice">
+          <rect y="-13" width="370" height="186" fill="#ead6b4"/>
+          <g stroke="#d7bb8e" stroke-width="3"><path d="M0 -5h370M0 20h370M0 50h370M0 80h370M0 110h370M0 140h370M0 166h370"/></g>
+          <!-- grassed waterway -->
+          <path d="M150 -20 C150 50 230 70 220 180" fill="none" stroke="#73b153" stroke-width="62"/>
+          <g fill="none" stroke="#4f923a" stroke-width="3" stroke-linecap="round">
+            <path d="M136 14 l5 -9 l5 9 M166 26 l5 -9 l5 9 M150 52 l5 -9 l5 9 M186 58 l5 -9 l5 9 M176 88 l5 -9 l5 9
+                     M214 98 l5 -9 l5 9 M194 124 l5 -9 l5 9 M226 136 l5 -9 l5 9 M200 156 l5 -9 l5 9"/>
+          </g>
+          <path d="M152 -13 C152 50 222 72 214 150" fill="none" stroke="#2f86d6" stroke-width="6" stroke-linecap="round"/>
+          <path d="M202 140 l12 18 l12 -16z" fill="#2f86d6"/>
+        </svg>
+      </div>
+      <div class="check">
+        <div class="lbl">확인할 조건</div>
+        <div class="chips"><span class="chip">물흐름 등 현장 조건</span></div>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 22 22"><path d="M11 3v14M4 11l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="plan">
+        <div class="lbl">관리 방안</div>
+        <div class="measure">식생수로 조성</div>
+      </div>
+      <div class="desc">
+        <div class="def"><b>식생수로</b>물이 모이는 길에 풀을 심어 만든 수로. 물길이 깊게 파이지 않게 함</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
