@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>맞춤 관리 후보</title>
+<style>
+  :root {
+    --bg: #292929;
+    --bg-end: #2b130b;
+    --orange: #f24a1b;
+    --orange-2: #ff6a33;
+    --card: #fffbfa;
+    --panel: #eff1f3;
+    --ink: #1c1c1c;
+    --ink-2: #4a4a4a;
+    --ink-3: #8c8c8c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden; position: relative;
+    font-family: "Pretendard", system-ui, sans-serif; color: #fff;
+    -webkit-font-smoothing: antialiased; word-break: keep-all;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 62%, var(--bg-end) 100%);
+  }
+  .sec { position: absolute; top: 46px; left: 70px; display: flex; align-items: center; gap: 12px;
+         font-size: 22px; font-weight: 700; color: #f2f2f2; }
+  .sec i { width: 18px; height: 18px; background: var(--orange); }
+  .head { position: absolute; top: 40px; left: 0; right: 0; text-align: center; }
+  .kicker { font-size: 24px; font-weight: 600; color: #e6e6e6; }
+  .title { margin-top: 14px; font-size: 60px; font-weight: 800; letter-spacing: -1.6px; }
+  .title mark { background: #fff; color: #e84212; padding: 0 10px; }
+
+  .grid { position: absolute; left: 70px; right: 70px; top: 214px; bottom: 50px;
+          display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 30px 36px; }
+  .card { background: var(--card); border: 3px solid var(--orange); border-radius: 6px; padding: 22px;
+          display: flex; gap: 28px; box-shadow: 0 0 22px rgba(242,74,27,.28); }
+
+  .panel { position: relative; width: 390px; flex: none; background: var(--panel); border-radius: 6px; overflow: hidden; }
+  .panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .panel .ph { position: absolute; inset: 0; display: grid; place-items: center; color: #b3b7bc; font-size: 22px; font-weight: 600; }
+
+  .txt { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+         text-align: center; color: var(--ink); padding-right: 6px; }
+  .no { font-size: 20px; font-weight: 800; color: var(--orange); letter-spacing: 1px; }
+  .state { margin-top: 6px; font-size: 36px; font-weight: 800; letter-spacing: -1px; }
+  .desc { margin-top: 12px; font-size: 21px; font-weight: 500; color: var(--ink-2); line-height: 1.55; letter-spacing: -0.3px; }
+  .desc b { color: var(--orange); font-weight: 800; }
+  .pill { margin-top: 22px; padding: 13px 34px; border-radius: 999px; color: #fff; font-size: 27px; font-weight: 800;
+          letter-spacing: -0.6px; background: linear-gradient(180deg, var(--orange-2), var(--orange));
+          box-shadow: 0 0 26px rgba(242,74,27,.55), 0 4px 10px rgba(242,74,27,.35); }
+  .foot { margin-top: 18px; font-size: 18px; font-weight: 500; color: var(--ink-3); letter-spacing: -0.2px; line-height: 1.5; }
+</style>
+</head>
+<body>
+  <div class="sec"><i></i>해결책</div>
+  <div class="head">
+    <div class="kicker">밭 상태별로 어떤 관리를 할 수 있을까?</div>
+    <div class="title">밭 상태에 따라 <mark>‘4가지 관리 방안’</mark>을 제안합니다</div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="panel"><div class="ph">사진 1</div><img src="photos/1.jpg" alt="" onerror="this.remove()"></div>
+      <div class="txt">
+        <div class="no">01</div>
+        <div class="state">맨흙이 드러난 밭</div>
+        <div class="desc">이 밭에 맞는 <b>피복재</b>인지 먼저 확인합니다</div>
+        <div class="pill">잔재 피복과 멀칭</div>
+        <div class="foot">수확하고 남은 줄기나 짚, 비닐로<br>흙 표면을 덮는 방법</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="panel"><div class="ph">사진 2</div><img src="photos/2.jpg" alt="" onerror="this.remove()"></div>
+      <div class="txt">
+        <div class="no">02</div>
+        <div class="state">수확 후 비어 있는 기간</div>
+        <div class="desc">지역 여건과 <b>다음 작물 재배</b>에<br>문제가 없는지 확인합니다</div>
+        <div class="pill">피복작물 재배</div>
+        <div class="foot">다음 작물을 심기 전까지 빈 땅에<br>작물을 심어 흙을 덮어 두는 방법</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="panel"><div class="ph">사진 3</div><img src="photos/3.jpg" alt="" onerror="this.remove()"></div>
+      <div class="txt">
+        <div class="no">03</div>
+        <div class="state">물이 넓고 얕게 흐르는 밭</div>
+        <div class="desc">공간과 작업 동선,<br><b>배출구와 물 고임</b> 상태를 확인합니다</div>
+        <div class="pill">완충식생대</div>
+        <div class="foot">밭 가장자리에 풀을 띠처럼 심어<br>흘러나가는 물과 흙을 붙잡는 방법</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="panel"><div class="ph">사진 4</div><img src="photos/4.jpg" alt="" onerror="this.remove()"></div>
+      <div class="txt">
+        <div class="no">04</div>
+        <div class="state">물길이 한곳으로 모이는 밭</div>
+        <div class="desc"><b>물이 흐르는 양과 방향</b> 같은<br>현장 조건을 먼저 확인합니다</div>
+        <div class="pill">식생수로</div>
+        <div class="foot">물이 모이는 길에 풀을 심어<br>물길이 깊게 파이지 않게 하는 방법</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
