@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>맞춤 관리 후보</title>
+<style>
+  :root {
+    --bg: #f4f4f2;
+    --card: #ffffff;
+    --deep: #3d6140;      /* forest green: pills, number badges */
+    --accent: #4a8a55;
+    --sage: #88a078;
+    --tint: #eef3ea;
+    --hl: #d5e6ca;        /* title highlight */
+    --line: #d6e2cf;
+    --ink: #121512;
+    --ink-2: #333a33;
+    --ink-3: #6f7a6f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden; position: relative;
+    font-family: "Pretendard", system-ui, sans-serif; color: var(--ink);
+    -webkit-font-smoothing: antialiased; word-break: keep-all;
+  }
+  /* deck-style green wash at the bottom */
+  .wash { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+          background: linear-gradient(180deg, rgba(136,160,120,0) 0%, rgba(136,160,120,.55) 45%, #5f8257 80%, #4d6e47 100%); }
+  .guide { position: absolute; left: 0; right: 0; bottom: 26px; text-align: center;
+           font-size: 22px; font-weight: 600; color: #fff; letter-spacing: -0.2px; }
+  .guide span { opacity: .75; margin: 0 14px; }
+
+  .head { position: absolute; top: 44px; left: 0; right: 0; text-align: center; }
+  .kicker { font-size: 24px; font-weight: 700; color: var(--accent); }
+  .title  { margin-top: 8px; font-size: 50px; font-weight: 800; letter-spacing: -1.3px; }
+
+  .grid { position: absolute; left: 60px; right: 60px; top: 172px; height: 808px;
+          display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 24px; }
+  .q { background: var(--card); border-radius: 24px; padding: 22px; display: flex; gap: 26px;
+       box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 10px 30px rgba(40,70,40,.08); }
+
+  .photo { position: relative; width: 400px; flex: none; border-radius: 16px; overflow: hidden;
+           background: repeating-linear-gradient(135deg, #eef2eb 0 14px, #e6ece2 14px 28px);
+           box-shadow: inset 0 0 0 2px var(--line); }
+  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .photo .ph { position: absolute; inset: 0; display: grid; place-content: center; gap: 10px; text-align: center;
+               color: var(--sage); font-size: 22px; font-weight: 700; }
+  .photo .ph svg { width: 56px; height: 56px; margin: 0 auto; }
+
+  .body { flex: 1; min-width: 0; display: flex; flex-direction: column; padding-top: 4px; }
+  .top { display: flex; align-items: center; gap: 14px; }
+  .no { width: 44px; height: 44px; flex: none; border-radius: 50%; background: var(--deep); color: #fff;
+        display: grid; place-items: center; font-size: 24px; font-weight: 800; }
+  .state { font-size: 36px; font-weight: 800; letter-spacing: -1px; white-space: nowrap;
+           background: linear-gradient(transparent 58%, var(--hl) 58%, var(--hl) 94%, transparent 94%); padding: 0 4px; }
+  .tag { margin-top: 8px; margin-left: 58px; font-size: 17px; font-weight: 600; color: var(--ink-3); }
+
+  .rows { flex: 1; margin-top: 18px; border: 2px solid var(--line); border-radius: 16px; padding: 18px 18px;
+          display: flex; flex-direction: column; justify-content: center; gap: 16px; background: #fcfdfb; }
+  .row { display: flex; align-items: flex-start; gap: 14px; }
+  .pill { flex: none; width: 104px; text-align: center; background: var(--deep); color: #fff; border-radius: 999px;
+          padding: 5px 0; font-size: 17px; font-weight: 700; letter-spacing: -0.2px; }
+  .pill.lite { background: var(--tint); color: var(--deep); }
+  .val { font-size: 21px; font-weight: 600; color: var(--ink-2); line-height: 1.45; letter-spacing: -0.3px; padding-top: 1px; }
+  .val.big { font-size: 30px; font-weight: 800; color: var(--ink); line-height: 1.2; letter-spacing: -0.8px; padding-top: 0; }
+  .val.small { font-size: 19px; font-weight: 500; line-height: 1.5; }
+  .val.small b { font-weight: 800; color: var(--ink); margin-right: 6px; }
+</style>
+</head>
+<body>
+  <div class="wash"></div>
+
+  <div class="head">
+    <div class="kicker">맞춤 관리 후보</div>
+    <div class="title">밭 상태에 따라 4가지 관리 방안을 제안합니다</div>
+  </div>
+
+  <div class="grid">
+
+    <div class="q">
+      <div class="photo"><div class="ph"><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="5" y="10" width="46" height="36" rx="6"/><circle cx="19" cy="23" r="5"/><path d="M8 42l14-12 10 8 8-6 11 10"/></svg>사진 ①</div><img src="photos/1.jpg" alt="" onerror="this.remove()"></div>
+      <div class="body">
+        <div class="top"><div class="no">1</div><div class="state">맨흙이 노출된 밭</div></div>
+        <div class="rows">
+          <div class="row"><span class="pill">확인 조건</span><span class="val">피복재 적합성</span></div>
+          <div class="row"><span class="pill">관리 방안</span><span class="val big">잔재 피복 · 멀칭</span></div>
+          <div class="row"><span class="pill lite">설명</span><span class="val small"><b>잔재 피복</b>수확 후 남은 줄기·잎을 밭에 남겨 흙을 덮어 둠<br><b>멀칭</b>짚·비닐 등으로 흙 표면을 덮음</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="q">
+      <div class="photo"><div class="ph"><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="5" y="10" width="46" height="36" rx="6"/><circle cx="19" cy="23" r="5"/><path d="M8 42l14-12 10 8 8-6 11 10"/></svg>사진 ②</div><img src="photos/2.jpg" alt="" onerror="this.remove()"></div>
+      <div class="body">
+        <div class="top"><div class="no">2</div><div class="state">수확 후 빈 기간</div></div>
+        <div class="rows">
+          <div class="row"><span class="pill">확인 조건</span><span class="val">지역 · 다음&nbsp;재배&nbsp;가능성</span></div>
+          <div class="row"><span class="pill">관리 방안</span><span class="val big">피복작물 재배</span></div>
+          <div class="row"><span class="pill lite">설명</span><span class="val small"><b>피복작물</b>다음 작물을 심기 전까지 빈 땅을 덮도록 심는 작물</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="q">
+      <div class="photo"><div class="ph"><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="5" y="10" width="46" height="36" rx="6"/><circle cx="19" cy="23" r="5"/><path d="M8 42l14-12 10 8 8-6 11 10"/></svg>사진 ③</div><img src="photos/3.jpg" alt="" onerror="this.remove()"></div>
+      <div class="body">
+        <div class="top"><div class="no">3</div><div class="state">넓고 얕은 물흐름</div></div>
+        <div class="rows">
+          <div class="row"><span class="pill">확인 조건</span><span class="val">공간 · 동선 · 배출구&nbsp;안정성 · 물&nbsp;고임&nbsp;여부</span></div>
+          <div class="row"><span class="pill">관리 방안</span><span class="val big">완충식생대</span></div>
+          <div class="row"><span class="pill lite">설명</span><span class="val small"><b>완충식생대</b>밭 가장자리에 풀을 심은 띠. 흘러나가는 물의 속도를 줄이고 흙을 걸러 줌</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="q">
+      <div class="photo"><div class="ph"><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="5" y="10" width="46" height="36" rx="6"/><circle cx="19" cy="23" r="5"/><path d="M8 42l14-12 10 8 8-6 11 10"/></svg>사진 ④</div><img src="photos/4.jpg" alt="" onerror="this.remove()"></div>
+      <div class="body">
+        <div class="top"><div class="no">4</div><div class="state">집중된 물길</div></div>
+        <div class="rows">
+          <div class="row"><span class="pill">확인 조건</span><span class="val">물흐름 등 현장 조건</span></div>
+          <div class="row"><span class="pill">관리 방안</span><span class="val big">식생수로 조성</span></div>
+          <div class="row"><span class="pill lite">설명</span><span class="val small"><b>식생수로</b>물이 모이는 길에 풀을 심어 만든 수로. 물길이 깊게 파이지 않게 함</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="guide">현재 상태<span>→</span>확인 조건<span>→</span>관리 방안</div>
+</body>
+</html>
