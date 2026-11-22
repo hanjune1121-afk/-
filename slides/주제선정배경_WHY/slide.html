@@ -15,6 +15,9 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: var(--bg); }
+  /* translucent dark layer over the original slide background, like the reference */
+  .bgimg { position: absolute; inset: 0; background: url(img/bg_base.jpg) center / cover no-repeat; }
+  .dim { position: absolute; inset: 0; background: rgba(10,10,10,.74); }
   body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
          font-family: "Noto Sans KR", "Pretendard", sans-serif; -webkit-font-smoothing: antialiased; word-break: keep-all; }
   .abs { position: absolute; white-space: nowrap; }
@@ -56,6 +59,7 @@
 </style>
 </head>
 <body>
+  <div class="bgimg"></div><div class="dim"></div>
   <div class="abs sec">1. 주제 선정 배경</div>
   <div class="abs ri">Remote Internship</div>
   <div class="ctr kicker">추가 분석의 필요성</div>
