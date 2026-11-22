@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>밭봄 기대효과</title>
+<style>
+  :root {
+    --bg: #f4f4f2;
+    --green: #3f7a45;
+    --green-2: #5f9a5f;
+    --border: #6f9e66;
+    --panel: #eef1ec;
+    --ink: #151715;
+    --ink-2: #3c423c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden; position: relative;
+    font-family: "Pretendard", system-ui, sans-serif; color: var(--ink);
+    -webkit-font-smoothing: antialiased; word-break: keep-all;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 62%, #a9bf9f 78%, #6d8f63 88%, #4f7148 100%);
+  }
+  .sec { position: absolute; top: 46px; left: 70px; display: flex; align-items: center; gap: 12px;
+         font-size: 22px; font-weight: 700; color: #2f3a31; }
+  .sec i { width: 18px; height: 18px; background: var(--green); }
+  .head { position: absolute; top: 40px; left: 0; right: 0; text-align: center; }
+  .kicker { font-size: 24px; font-weight: 600; color: var(--green); }
+  .title { margin-top: 14px; font-size: 60px; font-weight: 800; letter-spacing: -1.6px; }
+  .title mark { background: #dfead7; color: #2f6b38; padding: 0 12px; }
+
+  .cards { position: absolute; left: 70px; right: 70px; top: 212px; height: 640px;
+           display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .card { background: #fff; border: 3px solid var(--border); border-radius: 6px; padding: 24px 24px 34px;
+          display: flex; flex-direction: column; align-items: center; text-align: center;
+          box-shadow: 0 0 22px rgba(63,122,69,.18); }
+  .photo { position: relative; width: 100%; height: 290px; flex: none; background: var(--panel); border-radius: 6px; overflow: hidden; }
+  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .photo .ph { position: absolute; inset: 0; display: grid; place-items: center; color: #a3a8a1; font-size: 22px; font-weight: 600; }
+  .ord { margin-top: 26px; font-size: 22px; font-weight: 800; color: var(--green); }
+  .txt { margin-top: 12px; font-size: 23px; font-weight: 500; color: var(--ink-2); line-height: 1.6; letter-spacing: -0.4px; }
+  .txt b { color: var(--green); font-weight: 800; }
+  .pill { margin-top: auto; padding: 14px 38px; border-radius: 999px; color: #fff; font-size: 27px; font-weight: 800;
+          letter-spacing: -0.6px; background: linear-gradient(180deg, var(--green-2), var(--green));
+          box-shadow: 0 0 24px rgba(63,122,69,.45), 0 4px 10px rgba(63,122,69,.30); }
+
+  .close { position: absolute; left: 0; right: 0; bottom: 44px; text-align: center; color: #fff; }
+  .close .a { font-size: 23px; font-weight: 500; opacity: .9; letter-spacing: -0.3px; }
+  .close .b { margin-top: 8px; font-size: 33px; font-weight: 800; letter-spacing: -0.8px; }
+</style>
+</head>
+<body>
+  <div class="sec"><i></i>기대효과</div>
+  <div class="head">
+    <div class="kicker">그렇다면 ‘밭봄’을 통해 농부는 어떤 도움을 받을 수 있을까?</div>
+    <div class="title">‘밭봄’이 농부에게 주는 <mark>세 가지 도움</mark></div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="photo"><div class="ph">사진 1</div><img src="photos/1.jpg" alt="" onerror="this.remove()"></div>
+      <div class="ord">첫째</div>
+      <div class="txt">흩어져 있던 환경정보를 <b>한곳에서 확인</b>할 수 있어<br>내 밭을 이해하는 부담을 줄입니다</div>
+      <div class="pill">환경정보를 한곳에서</div>
+    </div>
+    <div class="card">
+      <div class="photo"><div class="ph">사진 2</div><img src="photos/2.jpg" alt="" onerror="this.remove()"></div>
+      <div class="ord">둘째</div>
+      <div class="txt">현장 조건에 맞는 대책만 검토하도록 안내해<br><b>불필요한 자재나 시설 비용</b>을 줄입니다</div>
+      <div class="pill">맞는 대책만 검토</div>
+    </div>
+    <div class="card">
+      <div class="photo"><div class="ph">사진 3</div><img src="photos/3.jpg" alt="" onerror="this.remove()"></div>
+      <div class="ord">셋째</div>
+      <div class="txt"><b>예상 순편익과 손익분기점</b>을 확인해<br>대책을 적용했을 때 비용을 회수할 수 있는지<br>판단할 수 있습니다</div>
+      <div class="pill">비용 회수 여부 판단</div>
+    </div>
+  </div>
+
+  <div class="close">
+    <div class="a">모든 농지에 새로운 대책을 더하는 것이 정답은 아닙니다</div>
+    <div class="b">기존 관리가 충분하면 유지하고, 보완이 필요한 곳에만 비용과 노력을 집중합니다</div>
+  </div>
+</body>
+</html>
