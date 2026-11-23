@@ -8,8 +8,8 @@ BEAT = 60 / BPM; BAR = 4 * BEAT; S16 = BEAT / 4
 OUT = sys.argv[1] if len(sys.argv) > 1 else "bgm_uke.wav"
 DUR = float(sys.argv[2]) if len(sys.argv) > 2 else 25.8
 END_CARD = float(sys.argv[3]) if len(sys.argv) > 3 else 22.3
-CHAPTERS = (10.0, 18.0)
-FINAL_HIT = 24.0
+CHAPTERS = (11.5, 23.5)
+FINAL_HIT = 30.0
 N = int((DUR + 3) * SR)
 rng = np.random.default_rng(31)
 DR = np.zeros((2, N)); MU = np.zeros((2, N))
